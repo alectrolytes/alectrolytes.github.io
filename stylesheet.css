@@ -1,4 +1,4 @@
-div h1 {
+div#navbar h1 {
   display: inline;
   font-family: Arial;
   font-size: 24px;
