@@ -7,16 +7,14 @@ body {
 .navbar {
   display: inline;
   font-family: Arial;
-  font-size: 24px;
+  font-size: 1.2em;
   font-weight: bold;
   color: #00CC99;
-  padding: 10px;
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
+  left: 25%;
   right: 0;
-  margin: auto;
   cursor: default;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -28,13 +26,13 @@ body {
 
 .box {
   display: inline-block;
-  height: 30px;
-  width: 150px;
+  height: 1em;
+  width: 6em;
   border: 2px solid #00CC99;
   position: relative;
   text-align: center;
-  padding: 10px;
-  margin: auto;
+  padding: .5em;
+  margin: 1em;
 }
 
 .box span {
