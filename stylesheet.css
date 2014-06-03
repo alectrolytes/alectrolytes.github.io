@@ -11,7 +11,7 @@ body {
   color: #00CC99;
   padding: 10px;
   position: absolute;
-  top:0;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
@@ -29,7 +29,7 @@ body {
   display: inline-block;
   height: 40px;
   width: 150px;
-  border:2px solid #00CC99;
+  border: 2px solid #00CC99;
   position: relative;
   text-align: center;
 }
@@ -44,49 +44,49 @@ body {
 }
 
 .box span.top {
-  width:50%;
-  height:2px;
+  width: 50%;
+  height: 2px;
   top: -2px;
-  left:-140%;
+  left: -140%;
 }
 
 .box:hover span.top {
-  left:0;
-  background:#00CC99
+  left: 0;
+  background: #00CC99
 }
 
 .box span.right {
-  height:50%;
-  width:2px;
+  height: 50%;
+  width: 2px;
   right: -2px;
-  top:-140%;
+  top: -140%;
 }
 
 .box:hover span.right {
-  top:0;
-  background:#00CC99
+  top: 0;
+  background: #00CC99
 }
 
 .box span.bottom {
-  width:50%;
+  width: 50%;
   height: 2px;
   bottom: -2px;
-  right:-140%;
+  right: -140%;
 }
 
 .box:hover span.bottom {
-  right:0;
-  background:#00CC99
+  right: 0;
+  background: #00CC99
 }
 
 .box span.left {
-  height:50%;
+  height: 50%;
   width: 2px;
   left: -2px;
-  bottom:-140%;
+  bottom: -140%;
 }
 
 .box:hover span.left {
-  bottom:0;
-  background:#00CC99
+  bottom: 0;
+  background: #00CC99;
 }
