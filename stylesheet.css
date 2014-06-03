@@ -34,7 +34,7 @@ body {
   position: relative;
   text-align: center;
   padding: 10px;
-  margin: auto;
+  margin: auto, 30px, auto, 30px;
 }
 
 .box span {
