@@ -1,9 +1,92 @@
-div#navbar h1 {
+body {
+  background: #ffffff;
+  margin: 0;
+  padding:0;
+}
+
+.navbar {
   display: inline;
   font-family: Arial;
   font-size: 24px;
   color: #00CC99;
-  border: 3px solid #00CC99;
-  margin: 3px;
-  padding: 5px;
+  padding: 10px;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.box {
+  display: inline-block;
+  height: 30px;
+  width: 150px;
+  border:2px solid #00CC99;
+  position: relative;
+  text-align: center;
+}
+
+.box span {
+  position: absolute;
+  background: none;
+  -moz-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.box span.top {
+  width:50%;
+  height:2px;
+  top: -2px;
+  left:-140%;
+}
+
+.box:hover span.top {
+  left:0;
+  background:#00CC99
+}
+
+.box span.right {
+  height:50%;
+  width:2px;
+  right: -2px;
+  top:-140%;
+}
+
+.box:hover span.right {
+  top:0;
+  background:#00CC99
+}
+
+.box span.bottom {
+  width:50%;
+  height: 2px;
+  bottom: -2px;
+  right:-140%;
+}
+
+.box:hover span.bottom {
+  right:0;
+  background:#00CC99
+}
+
+.box span.left {
+  height:50%;
+  width: 2px;
+  left: -2px;
+  bottom:-140%;
+}
+
+.box:hover span.left {
+  bottom:0;
+  background:#00CC99
 }
