@@ -32,6 +32,7 @@ body {
   border: 2px solid #00CC99;
   position: relative;
   text-align: center;
+  margin: auto;
 }
 
 .box span {
