@@ -15,7 +15,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  margin: 10px, 20px, 10px, 20px;
+  margin: auto;
   cursor: default;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -27,7 +27,7 @@ body {
 
 .box {
   display: inline-block;
-  height: 30px;
+  height: 40px;
   width: 150px;
   border:2px solid #00CC99;
   position: relative;
