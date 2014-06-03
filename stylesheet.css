@@ -27,7 +27,7 @@ body {
 
 .box {
   display: inline-block;
-  height: 40px;
+  height: 30px;
   width: 150px;
   border: 2px solid #00CC99;
   position: relative;
