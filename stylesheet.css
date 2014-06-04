@@ -7,13 +7,13 @@ body {
 .navbar {
   display: inline;
   font-family: Arial;
-  font-size: 1.2em;
+  font-size: 1.25em;
   font-weight: bold;
   color: #00CC99;
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 25%;
+  left: 20%;
   right: 0;
   cursor: default;
   -webkit-touch-callout: none;
@@ -26,8 +26,8 @@ body {
 
 .box {
   display: inline-block;
-  height: 1em;
-  width: 6em;
+  height: 2.5em;
+  width: 8em;
   border: 2px solid #00CC99;
   position: relative;
   text-align: center;
@@ -90,4 +90,8 @@ body {
 .box:hover span.left {
   bottom: 0;
   background: #00CC99;
+}
+
+.lorem-ipsum {
+  clear: both
 }
