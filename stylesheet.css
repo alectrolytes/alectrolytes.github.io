@@ -1,7 +1,7 @@
 body {
   background: #ffffff;
-  margin: 0;
-  padding-top: 6em;
+  margin: 5%;
+  padding-top: 3em;
 }
 
 .navbar-fixed-top .container {
@@ -98,8 +98,4 @@ body {
 .box:hover span.left {
   bottom: 0;
   background: #00CC99;
-}
-
-.lorem-ipsum {
-  margin: 5%;
 }
