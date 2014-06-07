@@ -10,6 +10,7 @@
 <body>
   <!-- Awesome zoom box navbar! -->
   <nav class="navbar-fixed-top" role="navigation">
+    <div class="container">
       <div class="navbar">
       <div class="box">
         Home
@@ -17,7 +18,7 @@
         <span class="right"></span>
         <span class="bottom"></span>
         <span class="left"></span>
-        <a class="boxlink" href="#Home" style="display:block;height:100%;width:100%"></a>
+        <a class="boxlink" href="#Home"></a>
       </div>
       <div class="box">
         About
@@ -25,7 +26,7 @@
         <span class="right"></span>
         <span class="bottom"></span>
         <span class="left"></span>
-        <a class="boxlink" href="#About" style="display:block;height:100%;width:100%"></a>
+        <a class="boxlink" href="#About"></a>
       </div>
       <div class="box">
         Projects
@@ -33,7 +34,7 @@
         <span class="right"></span>
         <span class="bottom"></span>
         <span class="left"></span>
-        <a class="boxlink" href="#Projects" style="display:block;height:100%;width:100%"></a>
+        <a class="boxlink" href="#Projects"></a>
       </div>
       <div class="box">
         Challenges
@@ -41,7 +42,8 @@
         <span class="right"></span>
         <span class="bottom"></span>
         <span class="left"></span>
-        <a class="boxlink" href="#Challenges" style="display:block;height:100%;width:100%"></a>
+        <a class="boxlink" href="#Challenges"></a>
+      </div>
       </div>
     </div>
   </nav>
@@ -93,13 +95,13 @@
 <!-- smooth scroll -->
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script type="text/javascript">
-var $root = $('html, body');
-$('a').click(function() {
-    $root.animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 500);
-    return false;
-});
+  var $root = $('html, body');
+  $('a').click(function() {
+      $root.animate({
+          scrollTop: $( $.attr(this, 'href') ).offset().top
+      }, 500);
+      return false;
+  });
 </script>
 </body>
 </html>
