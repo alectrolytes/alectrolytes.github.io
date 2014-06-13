@@ -1,15 +1,19 @@
 body {
   background: #F8F8FF;
   margin: 5%;
-  padding-top: 3em;
+  padding-top: 1em;
   font-family: Helvetica, Arial;
 }
 
 .navbar-fixed-top .container {
-  height: 6em;
+  height: 4.7em;
   width: 100%;
   background-color: #F8F8FF;
   border-bottom: 1px solid #B0C4DE;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: auto;
+  padding-bottom: auto;
 }
 .navbar {
   display: inline;
@@ -21,8 +25,10 @@ body {
   bottom: 0;
   left: 20%;
   right: 0;
-  margin: 0;
-  padding: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: auto;
+  padding-bottom: auto;
   cursor: default;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -39,7 +45,7 @@ body {
   position: relative;
   text-align: center;
   padding: .5em;
-  margin: 1em;
+  margin: .5em;
 }
 
 .box span {
@@ -52,9 +58,9 @@ body {
 }
 
 .box span.top {
-  width: 102%;
+  width: 100%;
   height: 2px;
-  top: -2px;
+  top: 0;
   left: -140%;
 }
 
@@ -64,9 +70,9 @@ body {
 }
 
 .box span.right {
-  height: 104%;
+  height: 100%;
   width: 2px;
-  right: -2px;
+  right: 0;
   top: -140%;
 }
 
@@ -76,9 +82,9 @@ body {
 }
 
 .box span.bottom {
-  width: 101%;
+  width: 100%;
   height: 2px;
-  bottom: -2px;
+  bottom: 0;
   right: -140%;
 }
 
@@ -88,9 +94,9 @@ body {
 }
 
 .box span.left {
-  height: 104%;
+  height: 100%;
   width: 2px;
-  left: -2px;
+  left: 0;
   bottom: -140%;
 }
 
@@ -106,10 +112,4 @@ body {
   top: 0;
   left: 0;
   text-decoration: none;
-}
-
-a:active .box {
-  height: 2.5em;
-  width: 8em;
-  border: 2px solid #00CC99;
 }
