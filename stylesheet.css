@@ -36,7 +36,6 @@ body {
   display: inline-block;
   height: 2.5em;
   width: 8em;
-  border: 2px solid #00CC99;
   position: relative;
   text-align: center;
   padding: .5em;
@@ -53,7 +52,7 @@ body {
 }
 
 .box span.top {
-  width: 50%;
+  width: 102%;
   height: 2px;
   top: -2px;
   left: -140%;
@@ -65,7 +64,7 @@ body {
 }
 
 .box span.right {
-  height: 50%;
+  height: 104%;
   width: 2px;
   right: -2px;
   top: -140%;
@@ -77,7 +76,7 @@ body {
 }
 
 .box span.bottom {
-  width: 50%;
+  width: 101%;
   height: 2px;
   bottom: -2px;
   right: -140%;
@@ -89,7 +88,7 @@ body {
 }
 
 .box span.left {
-  height: 50%;
+  height: 104%;
   width: 2px;
   left: -2px;
   bottom: -140%;
@@ -107,4 +106,10 @@ body {
   top: 0;
   left: 0;
   text-decoration: none;
+}
+
+a:active .box {
+  height: 2.5em;
+  width: 8em;
+  border: 2px solid #00CC99;
 }
