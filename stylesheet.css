@@ -8,9 +8,10 @@ body {
 .navbar-fixed-top .container {
   height: 4.6em;
   width: 100%;
+  position: relative;
   background-color: #F8F8FF;
-  border-bottom: 1px solid #B0C4DE;
 }
+
 .navbar {
   width: 100%;
   display: inline;
@@ -26,6 +27,14 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+span.hr {
+  height: 1px;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  background-color: #B0C4DE;
 }
 
 .box {
