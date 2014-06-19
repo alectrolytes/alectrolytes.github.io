@@ -8,25 +8,22 @@ body {
 .navbar-fixed-top .container {
   height: 4.7em;
   width: 100%;
+  position: absolute;
   background-color: #F8F8FF;
   border-bottom: 1px solid #B0C4DE;
-  margin-top: auto;
-  margin-bottom: auto;
   padding-top: auto;
   padding-bottom: auto;
+  left: 0;
+  right: 0;
 }
 .navbar {
+  width: 100%;
   display: inline;
   font-size: 1.25em;
   font-weight: bold;
   color: #00CC99;
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: auto;
   padding-top: auto;
   padding-bottom: auto;
   cursor: default;
