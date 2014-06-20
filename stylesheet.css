@@ -109,6 +109,12 @@ body {
 #page1 {
   height: 70em;
   width: 100%;
-  font-color: #000000;
-  background-image:url(http://goo.gl/pWhMJR);
+  background-image: url(http://goo.gl/pWhMJR);
+}
+
+#page1 .container {
+  padding: 1em;
+  opacity: .7;
+  background-image: url(pictures/dark_carbonfiber.png);
+  color: #00CC99;
 }
