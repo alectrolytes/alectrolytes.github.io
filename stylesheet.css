@@ -1,6 +1,6 @@
 body {
   background: #F8F8FF;
-  margin: 5%;
+  margin-top: 5%;
   padding-top: 1em;
   font-family: Helvetica, Arial;
 }
@@ -106,9 +106,9 @@ body {
   text-decoration: none;
 }
 
-.page1 {
-  height: 100%;
+#page1 {
+  height: 60em;
   width: 100%;
-  background-color:#000000;
-  background-image: url("goo.gl/pWhMJR");
+  font-color: #000000;
+  background-image:url(http://goo.gl/pWhMJR);
 }
