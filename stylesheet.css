@@ -1,6 +1,6 @@
 body {
   background: #F8F8FF;
-  margin-top: 5%;
+  margin-top: 4.7em;
   font-family: Helvetica, Arial;
 }
 
@@ -115,5 +115,5 @@ body {
   padding: 1em;
   opacity: .7;
   background-image: url(pictures/dark_carbonfiber.png);
-  color: #00CC99;
+  color: #00FFBF;
 }
