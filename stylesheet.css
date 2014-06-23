@@ -8,7 +8,7 @@ body {
   height: 4.7em;
   width: 100%;
   position: relative;
-  background-color: linear-gradient(#F8F8FF, #FFFFFF);
+  background: linear-gradient(#F8F8FF, #FFFFFF);
   border-bottom: 1px solid #B0C4DE;
 }
 
