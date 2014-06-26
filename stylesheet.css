@@ -113,8 +113,7 @@ body {
 
 #page1 .container {
   padding: 1em;
-  opacity: .7;
-  background-image: url(pictures/dark_carbonfiber.png);
-  color: #00f3b6;
+  background-image: url(pictures/dark_carbonfiber_transparent.png);
+  color: #00CC99;
   font-family: Mentone;
 }
