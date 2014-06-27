@@ -117,3 +117,7 @@ body {
   color: #00CC99;
   font-family: Mentone;
 }
+
+#page2 .container {
+  padding: 1em;
+}
