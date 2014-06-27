@@ -126,5 +126,31 @@ body {
 
 #page2 .container {
   padding: 1em;
+}
+
+#page3 {
+  height: 60em;
+  width:100%;
+}
+
+#page3 .container {
+  padding: 1em;
+}
+
+#page4 {
+  height: 60em;
+  width: 100%;
+}
+
+#page4 .container {
+  padding: 1em;
+}
+
+.container h1 {
+  font-size: 3em;
+  font-family: Mentone;
+  color: #00CC99;
+}
+.container p {
   font-size: 1.5em;
 }
