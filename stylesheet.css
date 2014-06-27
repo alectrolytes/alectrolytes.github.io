@@ -15,8 +15,9 @@ body {
 .navbar {
   width: 100%;
   display: inline;
-  font-size: 1.25em;
+  font-size: 1.3em;
   font-weight: bold;
+  font-family: Mentone;
   color: #00CC99;
   position: absolute;
   text-align: center;
@@ -121,7 +122,7 @@ body {
 #page2 {
   height: 60em;
   width: 100%;
-  background-image: url(pictures/elastoplast_green.png);
+  /*background-image: url(pictures/elastoplast.png);*/
 }
 
 #page2 .container {
@@ -131,6 +132,7 @@ body {
 #page3 {
   height: 60em;
   width:100%;
+  background: #FFFFFF;
 }
 
 #page3 .container {
@@ -147,7 +149,7 @@ body {
 }
 
 .container h1 {
-  font-size: 3em;
+  font-size: 4em;
   font-family: Mentone;
   color: #00CC99;
 }
