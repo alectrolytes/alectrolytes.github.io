@@ -1,7 +1,6 @@
 body {
   background: #F0FFF0;
   margin-top: 4.7em;
-  font-family: Helvetica, Arial;
 }
 
 .navbar-fixed-top .container {
@@ -174,4 +173,5 @@ body {
 }
 .container p {
   font-size: 1.5em;
+  font-family: Lato;
 }
