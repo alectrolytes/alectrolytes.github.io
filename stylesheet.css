@@ -123,13 +123,16 @@ body {
 #page2 {
   height: 60em;
   width: 100%;
-  background-image: url(pictures/whitecoat_with_mom_cropped.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
+}
+
+#profile-pic {
+  float: left;
 }
 
 #page2 .container {
-  background: rgba(255, 255, 255, 0.8);
+  float: right;
+  height: 80%;
+  width: 60%;
   padding: 1em;
 }
 
