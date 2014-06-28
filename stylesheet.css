@@ -130,13 +130,22 @@ body {
   width: 40%;
   float: left;
   margin: 0 2.5%;
+  text-align: center;
+}
+
+#profile-pic:before {
+  content:'';
+  display: inline-block;
+  height:100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
 }
 
 #page2 .container {
   float: right;
   height: 60em;
   width: 50%;
-  margin: 0 2.5%;
+  margin: 2.5%;
 }
 
 #page3 {
