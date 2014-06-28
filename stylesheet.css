@@ -126,17 +126,17 @@ body {
 }
 
 #profile-pic {
-  float: left;
   height: 60em;
   width: 40%;
-  margin: auto;
+  float: left;
+  margin: 0 2.5%;
 }
 
 #page2 .container {
   float: right;
-  height: 80%;
-  width: 60%;
-  padding: 1em;
+  height: 60em;
+  width: 50%;
+  margin: 0 2.5%;
 }
 
 #page3 {
