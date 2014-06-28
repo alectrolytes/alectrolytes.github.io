@@ -127,6 +127,9 @@ body {
 
 #profile-pic {
   float: left;
+  height: 60em;
+  width: 40%;
+  margin: auto;
 }
 
 #page2 .container {
