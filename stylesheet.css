@@ -158,7 +158,13 @@ body {
 }
 
 .thumbnail {
-  margin: 0em 3em 4em 3em;
+  display: inline-block;
+  margin: 0 4% 5% 4%;
+  width: 25%;
+}
+
+.thumbnail img {
+  width: 100%;
 }
 
 #page4 {
