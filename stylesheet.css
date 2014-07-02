@@ -157,6 +157,10 @@ body {
   padding: 1em;
 }
 
+.thumbnail {
+  margin: 1.5em;
+}
+
 #page4 {
   height: 60em;
   width: 100%;
@@ -167,6 +171,7 @@ body {
 }
 
 .container h1 {
+  margin-bottom: 0.5em;
   font-size: 3.5em;
   font-family: Mentone;
   color: #00CC99;
