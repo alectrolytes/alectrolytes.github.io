@@ -160,9 +160,9 @@ body {
 
 .thumbnail {
   display: inline-block;
-  margin: 3% 4% 3% 4%;
+  margin: 3% 6.5% 3% 6.5%;
   width: 20%;
-  max-height: 27%;
+  max-width: 20%;
 }
 
 .thumbnail img {
