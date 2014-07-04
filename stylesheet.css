@@ -7,7 +7,7 @@ body {
   height: 4.7em;
   width: 100%;
   position: relative;
-  background: linear-gradient(#F0FFF0, #FFFFFF);
+  background: #F0FFF0;
   border-bottom: 1px solid #B0C4DE;
   opacity: .95;
 }
@@ -145,7 +145,7 @@ body {
   float: right;
   height: 60em;
   width: 50%;
-  margin: 2.5%;
+  margin: 2.5% 5% 2.5% 0;
 }
 
 #page3 {
@@ -160,8 +160,8 @@ body {
 
 .thumbnail {
   display: inline-block;
-  margin: 0 4% 5% 4%;
-  width: 25%;
+  margin: 3% 4% 3% 4%;
+  width: 20%;
   max-height: 27%;
 }
 
@@ -186,6 +186,5 @@ body {
 }
 .container p {
   font-size: 1.4em;
-  font-family: Museo;
-  text-indent: 2em;
+  font-family: Museo300;
 }

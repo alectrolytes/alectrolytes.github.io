@@ -1,8 +1,9 @@
 [{
-	"company-name": "",
-	"city": "",
-	"state": "",
-	"employees": "",
-	"tags": "",
-	"categories": ""
+	"name": "KDai",
+	"challenge": "Get to diamond rank in League, WITHOUT playing jungle!",
+	"proof": "not completed yet"
+},{
+	"name": "Alec",
+	"challenge": "Build a website!",
+	"proof": "<a href="http://teamnex.us">Team Nexus</a>"
 }]
