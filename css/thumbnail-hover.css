@@ -6,10 +6,11 @@
   text-align: center;
   box-shadow: 1px 1px 2px #e6e6e6;
   cursor: default;
+  vertical-align: middle;
 }
 
 .view img {
-  height: auto;
+  max-height: 100%;
   max-width: 100%;
   display: block;
   position: relative;
