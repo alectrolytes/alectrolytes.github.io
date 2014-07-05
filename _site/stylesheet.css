@@ -179,13 +179,13 @@ body {
 
 .container h1 {
   margin-bottom: 0.5em;
-  font-size: 3.5em;
+  font-size: 3.5vw;
   font-family: Mentone;
   color: #00CC99;
 }
 
 p {
-  font-size: 1.4em;
+  font-size: 1.42vw;
   font-family: Museo300;
 }
 

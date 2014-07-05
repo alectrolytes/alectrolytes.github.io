@@ -6,10 +6,11 @@
   text-align: center;
   box-shadow: 1px 1px 2px #e6e6e6;
   cursor: default;
+  vertical-align: middle;
 }
 
 .view img {
-  max-height: auto;
+  max-height: 100%;
   max-width: 100%;
   display: block;
   position: relative;
@@ -88,12 +89,12 @@
 }
 
 .view-second a.info {
-    transform: translate(0px, 100px);
+    transform: translate(0px, 200px);
     transition: all 0.2s 0.1s ease-in-out;
-    -webkit-transform: translate(0px, 100px);
-    -moz-transform: translate(0px, 100px);
-    -o-transform: translate(0px, 100px);
-    -ms-transform: translate(0px, 100px);
+    -webkit-transform: translate(0px, 200px);
+    -moz-transform: translate(0px, 200px);
+    -o-transform: translate(0px, 200px);
+    -ms-transform: translate(0px, 200px);
     -webkit-transition: all 0.2s 0.1s ease-in-out;
     -moz-transition: all 0.2s 0.1s ease-in-out;
     -o-transition: all 0.2s 0.1s ease-in-out;
