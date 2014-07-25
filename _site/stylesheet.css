@@ -109,13 +109,13 @@ body {
 #page1 {
   height: 60em;
   width: 100%;
-  background-image: url(pictures/whitecoat.png);
+  background-image: url(img/whitecoat.png);
   background-repeat: no-repeat;
 }
 
 #page1 .container {
   padding: 1em;
-  background-image: url(pictures/dark_carbonfiber_transparent.png);
+  background-image: url(img/dark_carbonfiber_transparent.png);
   color: #00CC99;
   font-family: Mentone;
 }
