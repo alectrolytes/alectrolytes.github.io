@@ -1,6 +1,7 @@
 body {
   background: #F0FFF0;
   margin-top: 4.7em;
+  font-family: Museo300;
 }
 
 .navbar-fixed-top .container {
@@ -162,10 +163,15 @@ body {
   position: relative;
   width: 80%;
   margin: 0 auto;
+  font-size: 1.5vmin;
 }
 
 .main .row {
   margin: 5% 0;
+}
+
+.content p{
+  font-size: 2.5vmin;
 }
 
 #page4 {
@@ -190,7 +196,6 @@ body {
 
 p {
   font-size: 2.5vmin;
-  font-family: Museo300;
 }
 
 a {
