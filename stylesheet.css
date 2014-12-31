@@ -116,6 +116,8 @@ body {
 
 #page1 .container {
   padding: 1em;
+  position: relative;
+  top: 4em;
   background-image: url(img/dark_carbonfiber_transparent.png);
   color: #00CC99;
   font-family: Mentone;
