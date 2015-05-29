@@ -4,6 +4,8 @@ body {
   background-image: url(img/whitecoat.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  height: 100%;
+  width: 100%;
 }
 
 .navbar-fixed-top .container {
@@ -111,7 +113,7 @@ body {
 
 #page1 {
   height: 60em;
-  width: 105%;
+  width: 100%;
   background-repeat: no-repeat;
 }
 
