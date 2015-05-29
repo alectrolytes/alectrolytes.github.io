@@ -2,6 +2,8 @@ body {
   margin-top: 4.7em;
   font-family: Museo300;
   background-image: url(img/whitecoat.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .navbar-fixed-top .container {
