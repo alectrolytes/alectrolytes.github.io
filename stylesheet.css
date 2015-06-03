@@ -159,6 +159,7 @@ body {
   height: 60em;
   width:100%;
   background: #FFFFFF;
+  opacity: 0.5;
 }
 
 #page3 .container {
