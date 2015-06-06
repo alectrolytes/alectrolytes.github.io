@@ -37,7 +37,6 @@ body {
   display: inline-block;
   height: 2.5em;
   width: 8em;
-  position: relative;
   text-align: center;
   padding: .5em;
   margin: .5em;
@@ -133,7 +132,6 @@ body {
 
 #page1 .container {
   padding: 1em;
-  position: relative;
   top: 4em;
   background-image: url(img/dark_carbonfiber_transparent.png);
   color: #00CC99;
@@ -177,7 +175,6 @@ body {
 }
 
 .main {
-  position: relative;
   width: 80%;
   margin: 0 auto;
   font-size: 1.5vmin;
