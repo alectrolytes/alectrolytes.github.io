@@ -111,17 +111,17 @@ body {
 
 .slide {
   position: absolute;
-  top: 4em;
+  top: 4.7em;
   left: 0;
   height: 0;
   width: 100%;
   transition: height 0.9s ease-in-out;
 }
 
-.slide:nth-child(1) { z-index:7 };
-.slide:nth-child(2) { z-index:8 };
-.slide:nth-child(3) { z-index:9 };
-.slide:nth-child(4) { z-index:10 };
+.slide:nth-child(1) { z-index:-1 };
+.slide:nth-child(2) { z-index:-2 };
+.slide:nth-child(3) { z-index:-3 };
+.slide:nth-child(4) { z-index:-4 };
 
 .active.slide {
   height: 100%;
