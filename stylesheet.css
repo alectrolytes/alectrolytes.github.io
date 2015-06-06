@@ -37,6 +37,7 @@ body {
   display: inline-block;
   height: 2.5em;
   width: 8em;
+  position: relative;
   text-align: center;
   padding: .5em;
   margin: .5em;
@@ -121,10 +122,10 @@ body {
   transition: height 0.9s ease-in-out;
 }
 
-.slide:nth-child(1) { z-index:10 };
-.slide:nth-child(2) { z-index:9 };
-.slide:nth-child(3) { z-index:8 };
-.slide:nth-child(4) { z-index:7 };
+.slide:nth-child(1) { z-index:-1 };
+.slide:nth-child(2) { z-index:-2 };
+.slide:nth-child(3) { z-index:-3 };
+.slide:nth-child(4) { z-index:-4 };
 
 .active.slide {
   height: 100%;
@@ -132,6 +133,7 @@ body {
 
 #page1 .container {
   padding: 1em;
+  position: relative;
   top: 4em;
   background-image: url(img/dark_carbonfiber_transparent.png);
   color: #00CC99;
@@ -175,6 +177,7 @@ body {
 }
 
 .main {
+  position: relative;
   width: 80%;
   margin: 0 auto;
   font-size: 1.5vmin;
