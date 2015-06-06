@@ -1,8 +1,6 @@
 body {
   margin-top: 4.7em;
   font-family: Museo300;
-  background-image: url(img/whitecoat.png);
-  background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100%;
   width: 100%;
@@ -129,6 +127,11 @@ body {
 
 .active.slide {
   height: 100%;
+}
+
+#page 1 {
+  background-image: url(img/whitecoat.png);
+  background-repeat: no-repeat;
 }
 
 #page1 .container {
