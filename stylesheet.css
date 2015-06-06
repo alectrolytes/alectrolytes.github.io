@@ -109,10 +109,22 @@ body {
   text-decoration: none;
 }
 
-#page1 {
-  height: 60em;
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
   width: 100%;
-  background-repeat: no-repeat;
+  transition: height 0.9s ease-in-out;
+}
+
+.slide:nth-child(1) { z-index:10 };
+.slide:nth-child(2) { z-index:9 };
+.slide:nth-child(3) { z-index:8 };
+.slide:nth-child(4) { z-index:7 };
+
+.active.slide {
+  height: 100%
 }
 
 #page1 .container {
@@ -125,8 +137,6 @@ body {
 }
 
 #page2 {
-  height: 60em;
-  width: 100%;
   background: #FFFFFF;
 }
 
@@ -154,8 +164,6 @@ body {
 }
 
 #page3 {
-  height: 60em;
-  width:100%;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
@@ -184,8 +192,6 @@ body {
 }
 
 #page4 {
-  height: 60em;
-  width: 100%;
   background: #FFFFFF;
 }
 
