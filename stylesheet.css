@@ -12,7 +12,7 @@ body {
   height: 4.7em;
   width: 100%;
   position: relative;
-  background: #FFFFFF;
+  background: #00CC99;
   border-bottom: 1px solid #B0C4DE;
   opacity: .95;
 }
@@ -23,7 +23,7 @@ body {
   font-size: 1.3em;
   font-weight: bold;
   font-family: Mentone;
-  color: #00CC99;
+  color: #FFFFFF;
   position: absolute;
   text-align: center;
   cursor: default;
@@ -63,7 +63,7 @@ body {
 
 .box:hover span.top {
   left: 0;
-  background: #00CC99
+  background: #FFFFFF;
 }
 
 .box span.right {
@@ -75,7 +75,7 @@ body {
 
 .box:hover span.right {
   top: 0;
-  background: #00CC99
+  background: #FFFFFF;
 }
 
 .box span.bottom {
@@ -87,7 +87,7 @@ body {
 
 .box:hover span.bottom {
   right: 0;
-  background: #00CC99
+  background: #FFFFFF;
 }
 
 .box span.left {
@@ -99,7 +99,7 @@ body {
 
 .box:hover span.left {
   bottom: 0;
-  background: #00CC99;
+  background: #FFFFFF;
 }
 
 .boxlink {
