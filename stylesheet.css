@@ -12,7 +12,7 @@ body {
   height: 4.7em;
   width: 100%;
   position: relative;
-  background: #00CC99;
+  background-color: rgba(0, 204, 153, 0.9);
 }
 
 .navbar {
