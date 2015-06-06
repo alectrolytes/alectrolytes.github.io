@@ -111,7 +111,7 @@ body {
 
 .slide {
   position: absolute;
-  top: 0;
+  top: 4em;
   left: 0;
   height: 0;
   width: 100%;
