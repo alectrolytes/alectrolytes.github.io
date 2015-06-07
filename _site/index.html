@@ -9,7 +9,8 @@
   <link rel="stylesheet" type="text/css" href="/css/thumbnail-hover.css"/>
   <link rel="stylesheet" href="/css/lightbox.css"/>
   <link type="text/css" rel="stylesheet" href="/stylesheet.css"/>
-  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/lightbox.min.js"></script>
   <script src="/js/list.js"></script>
   <script src="/js/scrolljack.js"></script>
 
@@ -58,37 +59,37 @@
 <nav class="navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar">
-      <div class="box">
+      <div id="home-btn" class="box">
         Home
         <span class="top"></span>
         <span class="right"></span>
         <span class="bottom"></span>
         <span class="left"></span>
-        <a id="home-btn" class="boxlink" href="#home"></a>
+        <a class="boxlink" href="#home"></a>
       </div>
-      <div class="box">
+      <div id="about-btn" class="box">
         About
         <span class="top"></span>
         <span class="right"></span>
         <span class="bottom"></span>
         <span class="left"></span>
-        <a id="about-btn" class="boxlink" href="#about"></a>
+        <a class="boxlink" href="#about"></a>
       </div>
-      <div class="box">
+      <div id="projects-btn" class="box">
         Projects
         <span class="top"></span>
         <span class="right"></span>
         <span class="bottom"></span>
         <span class="left"></span>
-        <a id="projects-btn" class="boxlink" href="#projects"></a>
+        <a class="boxlink" href="#projects"></a>
       </div>
-      <div class="box">
+      <div id="challenges-btn" class="box">
         Challenges
         <span class="top"></span>
         <span class="right"></span>
         <span class="bottom"></span>
         <span class="left"></span>
-        <a id="challenges-btn" class="boxlink" href="#challenges"></a>
+        <a class="boxlink" href="#challenges"></a>
       </div>
     </div>
   </div>
@@ -320,27 +321,6 @@ var entryList = new List('entry-list', options);
     var size = $("#fonty").css('font-size');
     alert("size:" + size);
   });*/
-</script>
-
-<script>
-$('.boxlink').click(function() {
-  alert("Hello");
-});
-
-$('#home-btn').click(function() {
-  $('#pages').children().removeClass('active');
-  $('slide:nth-child(2)').addClass('active');
-});
-
-$('#home-btn').click(function() {
-  $('#pages').children().removeClass('active');
-  $('slide:nth-child(3)').addClass('active');
-});
-
-$('#home-btn').click(function() {
-  $('#pages').children().removeClass('active');
-  $('slide:nth-child(4)').addClass('active');
-});
 </script>
 
 

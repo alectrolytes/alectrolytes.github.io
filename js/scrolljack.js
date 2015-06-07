@@ -2,25 +2,28 @@
 // Tweaked by TeamNexus
 
 var main = function() {
+	// --- navbar buttons ---
 	$('#home-btn').click(function() {
-		$('#pages').children().removeClass('active');
-		$('slide:nth-child(1)').addClass('active');
+	  $('.active').removeClass('active');
+	  $('section:nth-child(1)').addClass('active');
 	});
 
-	$('#home-btn').click(function() {
-		$('#pages').children().removeClass('active');
-		$('slide:nth-child(2)').addClass('active');
+	$('#about-btn').click(function() {
+	  $('.active').removeClass('active');
+	  $('section:nth-child(2)').addClass('active');
 	});
 
-	$('#home-btn').click(function() {
-		$('#pages').children().removeClass('active');
-		$('slide:nth-child(3)').addClass('active');
+	$('#projects-btn').click(function() {
+	  $('.active').removeClass('active');
+	  $('section:nth-child(3)').addClass('active');
 	});
 
-	$('#home-btn').click(function() {
-		$('#pages').children().removeClass('active');
-		$('slide:nth-child(4)').addClass('active');
+	$('#challenges-btn').click(function() {
+	  $('.active').removeClass('active');
+	  $('section:nth-child(4)').addClass('active');
 	});
+
+	// --- scroll jack ---
 
 	var delta;
 	var currentSlideIndex = 1;
@@ -79,7 +82,7 @@ var main = function() {
 
 	$(document).keypress(function(event) {
 	    if(event.which === 33 || event.which === 37 || event.which === 38) {
-	      document.write(5);
+	      alert("hello");
 	    }
 			else if(event.which === 34 || event.which === 39 || event.which === 40) {
 				document.nextSlide();

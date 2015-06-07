@@ -125,6 +125,7 @@ body {
 }
 
 .slide.active {
+  height: 100%;
   display: block;
 }
 
