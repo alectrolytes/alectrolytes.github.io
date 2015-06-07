@@ -2,6 +2,8 @@ body {
   margin-top: 4.7em;
   font-family: Museo300;
   background-attachment: fixed;
+  background-image: url(img/whitecoat.png);
+  background-repeat: no-repeat;
   height: 100%;
   width: 100%;
 }
@@ -120,18 +122,16 @@ body {
   transition: height 0.9s ease-in-out;
 }
 
-.slide:nth-child(1) { z-index:10 }
-.slide:nth-child(2) { z-index:9 }
-.slide:nth-child(3) { z-index:8 }
-.slide:nth-child(4) { z-index:7 }
+.slide:nth-child(1) { z-index:1 }
+.slide:nth-child(2) { z-index:-1 }
+.slide:nth-child(3) { z-index:-2 }
+.slide:nth-child(4) { z-index:-3 }
 
 .slide.active {
   height: 100%;
 }
 
 #page1 {
-  background-image: url(img/whitecoat.png);
-  background-repeat: no-repeat;
 }
 
 #page1 .container {
