@@ -1,5 +1,4 @@
 body {
-  margin-top: 4.7em;
   font-family: Museo300;
   background-attachment: fixed;
   background-image: url(img/whitecoat.png);
@@ -9,9 +8,8 @@ body {
 }
 
 .navbar-fixed-top .container {
-  height: 4.7em;
+  height: 4.5em;
   width: 100%;
-  position: relative;
   background-color: rgba(0, 204, 153, 0.9);
 }
 
@@ -109,24 +107,8 @@ body {
   text-decoration: none;
 }
 
-#pages {
-  height: 100%;
-}
-
-/* ScrollJack */
 .slide {
-  display: none;
-  position: absolute;
-  top: 4.7em;
-  left: 0;
-  height: 0;
-  width: 100%;
-  transition: height 0.9s ease-in-out;
-}
-
-.slide.active {
   height: 100%;
-  display: block;
 }
 
 #page1 {
