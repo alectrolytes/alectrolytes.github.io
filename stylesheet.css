@@ -113,7 +113,9 @@ body {
   height: 100%;
 }
 
+/* ScrollJack */
 .slide {
+  display: none;
   position: absolute;
   top: 4.7em;
   left: 0;
@@ -122,13 +124,8 @@ body {
   transition: height 0.9s ease-in-out;
 }
 
-.slide:nth-child(1) { z-index:1 }
-.slide:nth-child(2) { z-index:-1 }
-.slide:nth-child(3) { z-index:-2 }
-.slide:nth-child(4) { z-index:-3 }
-
 .slide.active {
-  height: 100%;
+  display: block;
 }
 
 #page1 {
@@ -144,7 +141,7 @@ body {
 }
 
 #page2 {
-  background: #FFFFFF;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 #profile-pic {
@@ -199,7 +196,7 @@ body {
 }
 
 #page4 {
-  background: #FFFFFF;
+  background-color: rgba(255, 255, 255, 1);;
 }
 
 #page4 .container {

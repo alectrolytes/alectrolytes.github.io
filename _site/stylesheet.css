@@ -1,16 +1,18 @@
 body {
-  background: #F0FFF0;
   margin-top: 4.7em;
   font-family: Museo300;
+  background-attachment: fixed;
+  background-image: url(img/whitecoat.png);
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
 }
 
 .navbar-fixed-top .container {
   height: 4.7em;
   width: 100%;
   position: relative;
-  background: #F0FFF0;
-  border-bottom: 1px solid #B0C4DE;
-  opacity: .95;
+  background-color: rgba(0, 204, 153, 0.9);
 }
 
 .navbar {
@@ -19,7 +21,7 @@ body {
   font-size: 1.3em;
   font-weight: bold;
   font-family: Mentone;
-  color: #00CC99;
+  color: #FFFFFF;
   position: absolute;
   text-align: center;
   cursor: default;
@@ -59,7 +61,7 @@ body {
 
 .box:hover span.top {
   left: 0;
-  background: #00CC99
+  background: #FFFFFF;
 }
 
 .box span.right {
@@ -71,7 +73,7 @@ body {
 
 .box:hover span.right {
   top: 0;
-  background: #00CC99
+  background: #FFFFFF;
 }
 
 .box span.bottom {
@@ -83,7 +85,7 @@ body {
 
 .box:hover span.bottom {
   right: 0;
-  background: #00CC99
+  background: #FFFFFF;
 }
 
 .box span.left {
@@ -95,7 +97,7 @@ body {
 
 .box:hover span.left {
   bottom: 0;
-  background: #00CC99;
+  background: #FFFFFF;
 }
 
 .boxlink {
@@ -107,11 +109,26 @@ body {
   text-decoration: none;
 }
 
-#page1 {
-  height: 60em;
+#pages {
+  height: 100%;
+}
+
+/* ScrollJack */
+.slide {
+  display: none;
+  position: absolute;
+  top: 4.7em;
+  left: 0;
+  height: 0;
   width: 100%;
-  background-image: url(img/whitecoat.png);
-  background-repeat: no-repeat;
+  transition: height 0.9s ease-in-out;
+}
+
+.slide.active {
+  display: block;
+}
+
+#page1 {
 }
 
 #page1 .container {
@@ -124,8 +141,7 @@ body {
 }
 
 #page2 {
-  height: 60em;
-  width: 100%;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 #profile-pic {
@@ -152,13 +168,12 @@ body {
 }
 
 #page3 {
-  height: 60em;
-  width:100%;
-  background: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 #page3 .container {
   padding: 1em;
+  width: 60%;
 }
 
 .main {
@@ -176,9 +191,12 @@ body {
   font-size: 2.5vmin;
 }
 
+.info {
+  font-family: Museo300;
+}
+
 #page4 {
-  height: 60em;
-  width: 100%;
+  background-color: rgba(255, 255, 255, 1);;
 }
 
 #page4 .container {

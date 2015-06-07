@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
 
   <!-- references -->
-  <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="/css/bootstrap.css"/>
   <link rel="stylesheet" type="text/css" href="/css/thumbnail-hover.css"/>
   <link rel="stylesheet" href="/css/lightbox.css"/>
   <link type="text/css" rel="stylesheet" href="/stylesheet.css"/>
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="/js/lightbox.min.js"></script>
   <script src="/js/list.js"></script>
+  <script src="/js/scrolljack.js"></script>
 
   <!-- Google app site verification -->
   <meta name="google-site-verification" content="KMhoH7MFXEz60ENtC4NoGTtmY0BtWVQnot7stbivRjg"/>
@@ -54,58 +54,59 @@
 <body>
 
 
-      <!-- Awesome zoom box navbar! -->
-  <nav class="navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar">
-        <div class="box">
-          Home
-          <span class="top"></span>
-          <span class="right"></span>
-          <span class="bottom"></span>
-          <span class="left"></span>
-          <a class="boxlink" href="#home"></a>
-        </div>
-        <div class="box">
-          About
-          <span class="top"></span>
-          <span class="right"></span>
-          <span class="bottom"></span>
-          <span class="left"></span>
-          <a class="boxlink" href="#about"></a>
-        </div>
-        <div class="box">
-          Projects
-          <span class="top"></span>
-          <span class="right"></span>
-          <span class="bottom"></span>
-          <span class="left"></span>
-          <a class="boxlink" href="#projects"></a>
-        </div>
-        <div class="box">
-          Challenges
-          <span class="top"></span>
-          <span class="right"></span>
-          <span class="bottom"></span>
-          <span class="left"></span>
-          <a class="boxlink" href="#challenges"></a>
-        </div>
+    <!-- Awesome zoom box navbar! -->
+<nav class="navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar">
+      <div class="box">
+        Home
+        <span class="top"></span>
+        <span class="right"></span>
+        <span class="bottom"></span>
+        <span class="left"></span>
+        <a class="boxlink" href="#home"></a>
+      </div>
+      <div class="box">
+        About
+        <span class="top"></span>
+        <span class="right"></span>
+        <span class="bottom"></span>
+        <span class="left"></span>
+        <a class="boxlink" href="#about"></a>
+      </div>
+      <div class="box">
+        Projects
+        <span class="top"></span>
+        <span class="right"></span>
+        <span class="bottom"></span>
+        <span class="left"></span>
+        <a class="boxlink" href="#projects"></a>
+      </div>
+      <div class="box">
+        Challenges
+        <span class="top"></span>
+        <span class="right"></span>
+        <span class="bottom"></span>
+        <span class="left"></span>
+        <a class="boxlink" href="#challenges"></a>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
+
+<!-- Skeleton -->
+<div id="#pages">
 
   <!-- Home section -->
-  <div id="page1">
-    <a id="home" style="position: relative; top: -4.7em;">&nbsp;</a>
+  <section id="page1" class ="slide active">
     <div class="container">
       <h1 style="font-family: HelveticaNeueLTStd; font-size: 4.5em; text-align: center; margin: 0.2em">Welcome Friends!</h1>
       <p style="font-size: 2em; font-family: Museo500; text-align: center; margin: 0 7%">This developing website is dedicated to you and everyone else for being awesome in some way. You all deserve credit for leaving a positive imprint and being my motivation to continue improving.</p>
     </div>
-  </div>
+  </section>
 
   <!-- About section -->
-  <div id="page2">
-    <a id="about" style="position: relative; top: -4.7em;">&nbsp;</a>
+  <section id="page2" class ="slide">
     <div id="profile-pic"><img style="display: inline-block; margin: auto; vertical-align: middle; max-width: 100%" src="img/bw_profile.jpg" alt="Picture of Me!"/></div>
     <div class="container">
       <h1>Yo, I'm Alec.</h1>
@@ -114,11 +115,10 @@
       <p>Team Nexus is an organization where awesome ideas converge. I am the only permanent member. The other members are the inspiring people who have helped or collaborated with me. I learn from others and try to emulate them with my own style. Without the wonderful help and positive influence of the people around me, I would not get where I am today. These lessons are treasured and referenced to achieve success.</p>
       <p>You can email me at: alec@teamnex.us</p>
     </div>
-  </div>
+  </section>
 
   <!-- Projects section -->
-  <div id="page3">
-    <a id="projects" style="position: relative; top: -4.7em;">&nbsp;</a>
+  <section id="page3" class ="slide">
     <div class="container">
       <h1>Projects</h1>
       <p>I take great pride in my work. Projects are collaboratively completed and then generously shared. Check out some of the projects I've worked on below. Some might prove useful!</p>
@@ -190,11 +190,10 @@
   </div>
 </div>
 
-  </div>
+  </section>
 
   <!-- Challenges section -->
-  <div id="page4">
-    <a id="challenges" style="position: relative; top: -4.7em;">&nbsp;</a>
+  <section id="page4" class ="slide">
     <div class="row">
       <div class="col-xs-8 col-md-8">
         <div class="container" style="width: 90%; margin-left: 15%;">
@@ -204,7 +203,7 @@
       </div>
       <div class="col-xs-4 col-md-4">
         <div class="challenge-form" style="height: 80%; width: 80%;">
-          <form action="//forms.brace.io/alec@teamnex.us" method="POST" style="margin-right: 15%; margin-top: 10%">
+          <form action="http://formspree.io/alec@teamnex.us" method="POST" style="margin-right: 15%; margin-top: 10%">
             <div class="row"><input type="text" name="name" placeholder="Your name" style="width: 15em; margin: 0.25em;"></div>
             <div class="row"><input type="email" name="_replyto" placeholder="Your email" style="width: 15em; margin: 0.25em;"></div>
             <div class="row"><textarea name="body" placeholder="Your challenge!" style="height: 6em; width: 15em; margin: 0.25em;"></textarea></div>
@@ -234,6 +233,18 @@
 		</tr>
 	</thead>
 	<tbody class="list">
+	
+		<tr>
+			<td class="name">Angela</td>
+			<td class="challenge">Get a 4.0 for a semester!</td>
+			<td class="proof">not completed yet</td>
+		</tr>
+	
+		<tr>
+			<td class="name">Kevin</td>
+			<td class="challenge">Meet me at PAX East 2015!!!</td>
+			<td class="proof"><a href="img/kjang_PAD.jpg" data-lightbox="challenges" data-title="Kevin at the Gungho booth for PAX East 2015!">completed on 3/6/2015</a></td>
+		</tr>
 	
 		<tr>
 			<td class="name">Brian</td>
@@ -288,7 +299,9 @@ var entryList = new List('entry-list', options);
 
 </script>
 
-  </div>
+  </section>
+
+</div>
 
 <!-- jQuery scripts -->
 
