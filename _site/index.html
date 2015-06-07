@@ -64,7 +64,7 @@
         <span class="right"></span>
         <span class="bottom"></span>
         <span class="left"></span>
-        <a class="boxlink" href="#home"></a>
+        <a id="home-btn" class="boxlink" href="#home"></a>
       </div>
       <div class="box">
         About
@@ -72,7 +72,7 @@
         <span class="right"></span>
         <span class="bottom"></span>
         <span class="left"></span>
-        <a class="boxlink" href="#about"></a>
+        <a id="about-btn" class="boxlink" href="#about"></a>
       </div>
       <div class="box">
         Projects
@@ -80,7 +80,7 @@
         <span class="right"></span>
         <span class="bottom"></span>
         <span class="left"></span>
-        <a class="boxlink" href="#projects"></a>
+        <a id="projects-btn" class="boxlink" href="#projects"></a>
       </div>
       <div class="box">
         Challenges
@@ -88,7 +88,7 @@
         <span class="right"></span>
         <span class="bottom"></span>
         <span class="left"></span>
-        <a class="boxlink" href="#challenges"></a>
+        <a id="challenges-btn" class="boxlink" href="#challenges"></a>
       </div>
     </div>
   </div>
@@ -320,6 +320,17 @@ var entryList = new List('entry-list', options);
     var size = $("#fonty").css('font-size');
     alert("size:" + size);
   });*/
+</script>
+
+<script>
+$(document).keypress(function(event) {
+    if(event.which === 33 || event.which === 37 || event.which === 38) {
+      document.write(5);
+    }
+		else if(event.which === 34 || event.which === 39 || event.which === 40) {
+			document.nextSlide();
+		};
+});
 </script>
 
 

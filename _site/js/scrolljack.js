@@ -1,6 +1,27 @@
 // Core code by HugeInc.
 // Tweaked by TeamNexus
+
 var main = function() {
+	$('#home-btn').click(function() {
+		$('slide').removeClass('active');
+		$('slide:nth-child(1)').addClass('active');
+	});
+
+	$('#home-btn').click(function() {
+		$('slide').removeClass('active');
+		$('slide:nth-child(2)').addClass('active');
+	});
+
+	$('#home-btn').click(function() {
+		$('slide').removeClass('active');
+		$('slide:nth-child(3)').addClass('active');
+	});
+
+	$('#home-btn').click(function() {
+		$('slide').removeClass('active');
+		$('slide:nth-child(4)').addClass('active');
+	});
+
 	var delta;
 	var currentSlideIndex = 1;
 
@@ -11,8 +32,8 @@ var main = function() {
 
 			delta--;
 
-			if ( Math.abs(delta) >= 3) {
-			prevSlide();
+			if ( Math.abs(delta) >= 5) {
+			document.prevSlide();
 			}
 		}
 
@@ -21,8 +42,8 @@ var main = function() {
 
 			delta++;
 
-			if (delta >= 3) {
-				nextSlide();
+			if (delta >= 5) {
+				document.nextSlide();
 			}
 		}
 
@@ -58,16 +79,16 @@ var main = function() {
 
 	$(document).keypress(function(event) {
 	    if(event.which === 33 || event.which === 37 || event.which === 38) {
-	      prevSlide();
+	      document.write(5);
 	    }
 			else if(event.which === 34 || event.which === 39 || event.which === 40) {
-				nextSlide();
+				document.nextSlide();
 			};
 	});
 
 	$(window).on({
 		'DOMMouseScroll mousewheel': elementScroll
 	});
-}
+};
 
 $(document).ready(main);
