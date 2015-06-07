@@ -3,22 +3,22 @@
 
 var main = function() {
 	$('#home-btn').click(function() {
-		$('slide').removeClass('active');
+		$('#pages').children().removeClass('active');
 		$('slide:nth-child(1)').addClass('active');
 	});
 
 	$('#home-btn').click(function() {
-		$('slide').removeClass('active');
+		$('#pages').children().removeClass('active');
 		$('slide:nth-child(2)').addClass('active');
 	});
 
 	$('#home-btn').click(function() {
-		$('slide').removeClass('active');
+		$('#pages').children().removeClass('active');
 		$('slide:nth-child(3)').addClass('active');
 	});
 
 	$('#home-btn').click(function() {
-		$('slide').removeClass('active');
+		$('#pages').children().removeClass('active');
 		$('slide:nth-child(4)').addClass('active');
 	});
 
@@ -33,7 +33,7 @@ var main = function() {
 			delta--;
 
 			if ( Math.abs(delta) >= 5) {
-			document.prevSlide();
+			prevSlide();
 			}
 		}
 
@@ -43,7 +43,7 @@ var main = function() {
 			delta++;
 
 			if (delta >= 5) {
-				document.nextSlide();
+				nextSlide();
 			}
 		}
 
