@@ -10,7 +10,8 @@ body {
 .navbar-fixed-top .container {
   height: 4.8em;
   width: 100%;
-  background-color: rgba(0, 204, 153, 0.9);
+  position: fixed;
+  background-color: rgba(0, 204, 153, 1);
 }
 
 .navbar {
@@ -107,8 +108,10 @@ body {
   text-decoration: none;
 }
 
-.slide {
-  height: 100%;
+.pages {
+  top: 4.8em;
+  height: calc(100% - 4.8em);
+  position: fixed;
 }
 
 #page1 {
@@ -128,8 +131,9 @@ body {
 }
 
 #profile-pic {
-  height: 60em;
+  height: 100%;
   width: 40%;
+  padding: 5%;
   float: left;
   margin: 0 2.5%;
   text-align: center;
@@ -156,7 +160,7 @@ body {
 
 #page3 .container {
   padding: 1em;
-  width: 60%;
+  width: 80%;
 }
 
 .main {

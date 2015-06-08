@@ -1,5 +1,6 @@
 body, html {
-  margin-top: 4.8em;
+  padding-top: 4.8em;
+  margin: 0;
   overflow: hidden;
   -webkit-transition: opacity 400ms;
   -moz-transition: opacity 400ms;
@@ -53,7 +54,7 @@ body, .onepage-wrapper, html {
   position: absolute;
   width: 4px;
   height: 4px;
-  background: rgba(0, 204, 153, 0.85);
+  background: rgba(0,204, 153, 0.85);
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
