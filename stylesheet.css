@@ -133,8 +133,8 @@ body {
 #profile-pic {
   float: left;
   height: 100%;
-  width: 40%;
-  margin: auto;
+  width: 35%;
+  margin-left: 5%;
   text-align: center;
 }
 
@@ -149,9 +149,9 @@ body {
 #page2 .container {
   float: right;
   height: 100%;
-  width: 60%;
-  margin: auto;
-  padding: 4%;
+  width: 50%;
+  margin-right: 5%;
+  padding: 2.5%;
 }
 
 #page3 {
