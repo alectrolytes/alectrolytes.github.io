@@ -3,7 +3,10 @@ layout: default
 title: NLM Citation Machine
 ---
 
-<!-- Awesome zoom box navbar! -->
+<!-- background tint-->
+<div style="height:100%; width:100%; background: rgba(0,0,0,0.5)"></div>
+
+<!-- awesome zoom box navbar! -->
 <nav class="navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar">
@@ -19,8 +22,9 @@ title: NLM Citation Machine
   </div>
 </nav>
 
-<!-- Citation Form -->
+<!-- citation form -->
 <form>
   Search here: <br>
   <input type="text" name="search"> <br>
+  <input type="button" name="search-btn" value="Generate!" onclick="generate()">
 </form>
