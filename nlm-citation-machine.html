@@ -42,7 +42,7 @@ function Get(yourUrl){
 
 function generateCitation() {
   // var search = prompt("What do you want to search?", "");
-  var search = this.form.elements("query").value
+  var search = this.form.elements("query").value;
 
   // determines if input is ISBN or PubMedID
   if (Number.isInteger(parseInt(search))) {
