@@ -170,6 +170,10 @@ body {
   width: 80%;
 }
 
+#page3 p {
+  font-size: 2vw;
+}
+
 .main {
   position: relative;
   width: 80%;
