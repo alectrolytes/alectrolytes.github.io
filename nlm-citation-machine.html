@@ -61,12 +61,25 @@ function generateCitation() {
       var json_obj = JSON.parse(Get('https://www.googleapis.com/books/v1/volumes?q=isbn:' + search));
       // isolate nested book object
       var book = json_obj.items[0].volumeInfo;
-      // arrange name
-      var name = book.authors[0];
-      var name_array = name.split(" ");
-      var name_nlm = name_array[name_array.length - 1] + ' ' + name_array[0].charAt(0);
+      // arrange author names
+      var author_count = 0;
+      var name_nlm = "";
+      for (name in book.authors) {
+        var name_array = book.authors[name].split(" ");
+        if (author_count < 3) {
+          name_nlm = name_nlm.concat(name_array[name_array.length - 1] + ' ' + name_array[0].charAt(0));
+        } else if(author_count === 4){
+          name_nlm = name_nlm.concat('et al');
+        }
+        author_count++;
+        if (author_count === book.authors.length) {
+          name_nlm = name_nlm.concat('. ')
+        } else if (author_count < 4) {
+          name_nlm = name_nlm.concat(', ')
+        }
+      }
       // generate NLM book citation
-      var citation = name_nlm + ' et al. ' +  book.title + '. ' + book.publisher + '; ' + book.publishedDate + '. ' + book.pageCount + ' p.';
+      var citation = name_nlm +  book.title + '. ' + book.publisher + '; ' + book.publishedDate + '. ' + book.pageCount + ' p.';
     } else {
       // parse JSON into js object
       var json_obj = JSON.parse(Get('http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&retmode=json&rettype=abstract&id=' + search));
