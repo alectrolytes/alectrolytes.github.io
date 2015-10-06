@@ -170,6 +170,10 @@ body {
   width: 80%;
 }
 
+#page3 .container p {
+  font-size: 1.5vw;
+}
+
 .main {
   position: relative;
   width: 80%;
@@ -179,6 +183,10 @@ body {
 
 .main .row {
   margin: 5% 0;
+}
+
+.content {
+  overflow: hidden;
 }
 
 .content p{
