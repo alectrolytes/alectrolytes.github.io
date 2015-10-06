@@ -1,0 +1,148 @@
+{
+ "kind": "books#volumes",
+ "totalItems": 2,
+ "items": [
+  {
+   "kind": "books#volume",
+   "id": "V7H4QQAACAAJ",
+   "etag": "RaFVCaXLLqM",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/V7H4QQAACAAJ",
+   "volumeInfo": {
+    "title": "Primer of Diagnostic Imaging",
+    "authors": [
+     "Ralph Weissleder"
+    ],
+    "publisher": "Mosby Incorporated",
+    "publishedDate": "2007-01",
+    "description": "The 4th Edition of this text - popularly known as the \"purple book\" - returns with a comprehensive, up-to-date look at diagnostic imaging, presenting essential facts in an easy-to-read, bulleted format. More than 1,800 images highlight key diagnostic details and encompass the full range of modalities and specialties. A differential diagnosis section is found at the end of each chapter, and a differential index facilitates rapid reference. The 4th Edition includes coverage of new technologies, emphasizes clinical technical advances in CT and MRI, and examines the emergence of PET. A CD-ROM - new to this edition - features animations that depict the spatial and temporal complexities of MRI. Highlights key diagnostic details for all body systems and encompasses the full range of radiologic modalities and specialties with more than 1,800 images - all in one convenient source. Presents key information in an easy-to-read, bulleted format for quick reference. Describes important signs, anatomic landmarks, and common radiopathologic alterations. Provides extra space for note taking. Includes mnemonics and descriptive terminology to enhance recall of key facts, techniques, and images. Examines new technologies, including hybrid PET technology and new applications of MRI. Covers new techniques in interventional radiology and digital mammography. Emphasizes subspecialty clinical technical advances in CT and MR - along with their updated protocols - as well as the emergence of PET. Discusses current trends and changes in disease classification and their impact on the interpretation of radiological findings. Features the contributions of new editor John W. Chen, who shares his knowledge in MR and neuroradiology. Includes a CD-ROM featuring animations that depict the spatial and temporal complexities of MRI.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "0323040683"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9780323040686"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "pageCount": 1112,
+    "printType": "BOOK",
+    "categories": [
+     "Medical"
+    ],
+    "averageRating": 5.0,
+    "ratingsCount": 1,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=V7H4QQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=V7H4QQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=V7H4QQAACAAJ&dq=isbn:0323040683&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=V7H4QQAACAAJ&dq=isbn:0323040683&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/Primer_of_Diagnostic_Imaging.html?hl=&id=V7H4QQAACAAJ"
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=V7H4QQAACAAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "The 4th Edition of this text - popularly known as the &quot;purple book&quot; - returns with a comprehensive, up-to-date look at diagnostic imaging, presenting essential facts in an easy-to-read, bulleted format."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "rwVQngEACAAJ",
+   "etag": "JKoS/WhE4uE",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/rwVQngEACAAJ",
+   "volumeInfo": {
+    "title": "Primer of Diagnostic Imaging",
+    "authors": [
+     "Ralph Weissleder"
+    ],
+    "publisher": "Mosby Incorporated",
+    "publishedDate": "2007-01",
+    "description": "The 4th Edition of this text - popularly known as the \"purple book\" - returns with a comprehensive, up-to-date look at diagnostic imaging, presenting essential facts in an easy-to-read, bulleted format. More than 1,800 images highlight key diagnostic details and encompass the full range of modalities and specialties. A differential diagnosis section is found at the end of each chapter, and a differential index facilitates rapid reference. The 4th Edition includes coverage of new technologies, emphasizes clinical technical advances in CT and MRI, and examines the emergence of PET. A CD-ROM - new to this edition - features animations that depict the spatial and temporal complexities of MRI. Highlights key diagnostic details for all body systems and encompasses the full range of radiologic modalities and specialties with more than 1,800 images - all in one convenient source. Presents key information in an easy-to-read, bulleted format for quick reference. Describes important signs, anatomic landmarks, and common radiopathologic alterations. Provides extra space for note taking. Includes mnemonics and descriptive terminology to enhance recall of key facts, techniques, and images. Examines new technologies, including hybrid PET technology and new applications of MRI. Covers new techniques in interventional radiology and digital mammography. Emphasizes subspecialty clinical technical advances in CT and MR - along with their updated protocols - as well as the emergence of PET. Discusses current trends and changes in disease classification and their impact on the interpretation of radiological findings. Features the contributions of new editor John W. Chen, who shares his knowledge in MR and neuroradiology. Includes a CD-ROM featuring animations that depict the spatial and temporal complexities of MRI.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "0323040683"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9780323040686"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "pageCount": 1112,
+    "printType": "BOOK",
+    "categories": [
+     "Medical"
+    ],
+    "averageRating": 5.0,
+    "ratingsCount": 1,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=rwVQngEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=rwVQngEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=rwVQngEACAAJ&dq=isbn:0323040683&hl=&cd=2&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=rwVQngEACAAJ&dq=isbn:0323040683&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/Primer_of_Diagnostic_Imaging.html?hl=&id=rwVQngEACAAJ"
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=rwVQngEACAAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "The 4th Edition of this text - popularly known as the &quot;purple book&quot; - returns with a comprehensive, up-to-date look at diagnostic imaging, presenting essential facts in an easy-to-read, bulleted format."
+   }
+  }
+ ]
+}

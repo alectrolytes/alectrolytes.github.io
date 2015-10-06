@@ -77,14 +77,98 @@
 </nav>
 
 <!-- citation form -->
-<div class="container" style="height:60%; width:50%; margin:auto; background: rgba(0,0,0,0.5)">
-  Hello World
-  <form>
-    Search here: <br>
-    <input type="text" name="search"> <br>
-    <input type="button" name="search-btn" value="Generate!" onclick="generate()">
+<div style="height:60%; width:60%; background:rgba(0,0,0,0.9); position:fixed; top:50%; left:50%; transform: translate(-50%,-50%)">
+  <div id="nlm-description" style="height:100%; width:50%; float:left; padding:3em; overflow:hidden">
+    <h2 style="color:#00CC99; margin-left:auto; margin-right:auto">NLM Citation Machine</h1>
+    <p style="color:white">NLM style citation machine for articles in <a href="http://www.ncbi.nlm.nih.gov/pubmed">PubMed</a> and books in <a href="https://books.google.com">Google Books</a>.</p>
+    <p style="color:white">Enter PubMed ID or ISBN number in the search field</p>
+    <p style="color:white">Useful references:</p>
+    <ul>
+      <li style="color:white">DiPiro: 0071800549</li>
+      <li style="color:white">CHEST: 22315268</li>
+      <li style="color:white">ACC/AHA Cholesterol: 24239923</li>
+    </ul>
+  </div>
+  <form id="citation-form"style="height:100%; width:50%; float:right; text-align:center">
+    <input type="text" id="query" style="position:relative; width:80%; top:15%; margin:auto" placeholder="Search here:"> <br>
+    <input type="button" id="generate-btn" style="color:white; background-color:#00CC99; border:none; position:relative; top:25%; margin:auto" value="Generate!" onclick="generateCitation()"> <br>
+    <textarea readonly id="citation" style="position:relative; height:40%; width:80%; top:35%; margin:auto; resize:none" rows="5"></textarea>
   </form>
 </div>
+
+<script>
+function Get(yourUrl){
+  var Httpreq = new XMLHttpRequest();
+  Httpreq.open("GET",yourUrl,false);
+  Httpreq.send(null);
+  return Httpreq.responseText;
+}
+
+function generateCitation() {
+  var search = document.getElementById('query').value;
+
+  // determines if input is ISBN or PubMedID
+  if (Number.isInteger(parseInt(search))) {
+    var search_length = search.length;
+    if (search_length === 10 || search_length === 13) {
+      // parse JSON into js object
+      var json_obj = JSON.parse(Get('https://www.googleapis.com/books/v1/volumes?q=isbn:' + search));
+      // isolate nested book object
+      var book = json_obj.items[0].volumeInfo;
+      // arrange author names
+      var author_count = 0;
+      var name_nlm = "";
+      for (name in book.authors) {
+        var name_array = book.authors[name].split(" ");
+        if (author_count < 3) {
+          name_nlm = name_nlm.concat(name_array[name_array.length - 1] + ' ' + name_array[0].charAt(0));
+        } else if(author_count === 4){
+          name_nlm = name_nlm.concat('et al');
+        }
+        author_count++;
+        if (author_count === book.authors.length) {
+          name_nlm = name_nlm.concat('. ')
+        } else if (author_count < 4) {
+          name_nlm = name_nlm.concat(', ')
+        }
+      }
+      // generate NLM book citation
+      var citation = name_nlm +  book.title + '. ' + book.publisher + '; ' + book.publishedDate + '. ' + book.pageCount + ' p.';
+    } else {
+      // parse JSON into js object
+      var json_obj = JSON.parse(Get('http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&retmode=json&rettype=abstract&id=' + search));
+      // isolate nested article object
+      var article = json_obj.result[search];
+      // arrange author names
+      var author_count = 0;
+      var name_nlm = "";
+      for (name in article.authors) {
+        if (author_count < 3) {
+          name_nlm = name_nlm.concat(article.authors[name].name);
+        } else if(author_count === 4){
+          name_nlm = name_nlm.concat('et al');
+        }
+        author_count++;
+        if (author_count === article.authors.length) {
+          name_nlm = name_nlm.concat('. ')
+        } else if (author_count < 4) {
+          name_nlm = name_nlm.concat(', ')
+        }
+      }
+      // generate NLM article citation depending if volume and issue are variables
+      if (article.volume === '') {
+        var citation = name_nlm + article.title + ' ' + article.source + '. ' + article.pubdate;
+      } else {
+        var citation = name_nlm + article.title + ' ' + article.source + '. ' + article.pubdate + ';' + article.volume + '(' + article.issue + ')';
+      }
+    }
+  }
+
+  // print citation
+  // console.log(citation);
+  document.getElementById('citation').value = citation;
+}
+</script>
 
 
 </body>
