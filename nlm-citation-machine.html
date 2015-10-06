@@ -24,7 +24,16 @@ title: NLM Citation Machine
 
 <!-- citation form -->
 <div style="height:60%; width:60%; background:rgba(0,0,0,0.9); position:fixed; top:50%; left:50%; transform: translate(-50%,-50%)">
-  <div id="nlm-description" style="height:100%; width:40%; float:left"></div>
+  <div id="nlm-description" style="height:100%; width:40%; float:left">
+    <h1 style="margin-left:auto; margin-right:auto">NLM Citation Machine</h1>
+    <p>NLM style citation machine for articles in <a href="http://www.ncbi.nlm.nih.gov/pubmed">PubMed</a> and books in <a href="https://books.google.com">Google Books</a>.</p>>
+    <p>Enter PubMedID or ISBN number in the search field</p>
+    <ul> Useful references:
+      <li>DiPiro: 0071800549</li>
+      <li>CHEST: 22315268</li>
+      <li>ACC/AHA Cholesterol: 24239923<li>
+    </ul
+  </div>
   <form id="citation-form"style="height:100%; width:60%; float:right; text-align:center">
     <input type="text" id="query" style="position:relative; width:60%; top:15%; margin:auto" placeholder="Search here:"> <br>
     <input type="button" id="generate-btn" style="color:white; background-color:#00CC99; border:none; position:relative; top:25%; margin:auto" value="Generate!" onclick="generateCitation()"> <br>
@@ -41,7 +50,6 @@ function Get(yourUrl){
 }
 
 function generateCitation() {
-  // var search = prompt("What do you want to search?", "");
   var search = document.getElementById('query').value;
 
   // determines if input is ISBN or PubMedID
