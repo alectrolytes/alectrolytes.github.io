@@ -185,8 +185,9 @@ body {
   margin: 5% 0;
 }
 
-.content {
-  overflow: hidden;
+.view img {
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .content p{
