@@ -66,15 +66,15 @@ function generateCitation() {
       var name_nlm = "";
       for (name in book.authors) {
         var name_array = book.authors[name].split(" ");
-        if (author_count < 3) {
+        // if (author_count < 3) {
           name_nlm = name_nlm.concat(name_array[name_array.length - 1] + ' ' + name_array[0].charAt(0));
-        } else if(author_count === 4){
-          name_nlm = name_nlm.concat('et al');
-        }
+        // } else if(author_count === 4){
+        //   name_nlm = name_nlm.concat('et al');
+        // }
         author_count++;
         if (author_count === book.authors.length) {
           name_nlm = name_nlm.concat('. ')
-        } else if (author_count < 4) {
+        } else if (author_count < book.authors.length) {
           name_nlm = name_nlm.concat(', ')
         }
       }
@@ -89,15 +89,15 @@ function generateCitation() {
       var author_count = 0;
       var name_nlm = "";
       for (name in article.authors) {
-        if (author_count < 3) {
+        // if (author_count < 3) {
           name_nlm = name_nlm.concat(article.authors[name].name);
-        } else if(author_count === 4){
-          name_nlm = name_nlm.concat('et al');
-        }
+        // } else if(author_count === 4){
+        // //   name_nlm = name_nlm.concat('et al');
+        // // }
         author_count++;
         if (author_count === article.authors.length) {
           name_nlm = name_nlm.concat('. ')
-        } else if (author_count < 4) {
+        } else if (author_count < article.authors.length) {
           name_nlm = name_nlm.concat(', ')
         }
       }
