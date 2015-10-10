@@ -1,31 +1,23 @@
-<div class="row" style="margin: 0 5%; max-height: 45%">
-	<table class="table table-striped">
+<div class="row" style="margin: 0 10%; height: 50%; width: 80%">
+	<table class="table table-striped" style="table-layout:fixed">
 		<thead>
 			<tr>
-				<th style="width:20%;"><span class="sort" data-sort="name">Name</span></th>
-				<th style="width:50%;"><span class="sort" data-sort="challenge">Challenge</span></th>
-				<th style="width:30%;"><span class="sort" data-sort="proof">Proof of Completion</span></th>
+				<th style="width:20%">Name</th>
+				<th style="width:50%">Challenge</th>
+				<th style="width:30%">Proof of Completion</th>
 			</tr>
 		</thead>
-		<tbody class="list">
-		{% for post in site.posts %}
-			<tr>
-				<td class="name">{{ post.name }}</td>
-				<td class="challenge">{{ post.challenge }}</td>
-				<td class="proof">{{ post.proof }}</td>
-			</tr>
-		{% endfor %}
-		</tbody>
 	</table>
+	<div style="height:90%; overflow-y:auto">
+		<table class="table table-striped" style="table-layout:fixed">
+			<tbody class="list">
+			{% for post in site.posts %}
+				<tr>
+					<td style="width:20%" class="name">{{ post.name }}</td>
+					<td style="width:50%" class="challenge">{{ post.challenge }}</td>
+					<td style="width:30%" class="proof">{{ post.proof }}</td>
+				</tr>
+			{% endfor %}
+			</tbody>
+		</table>
 </div>
-
-
-<script type="text/javascript">
-
-var options = {
-  valueNames: ['name', 'challenge', 'proof']
-};
-
-var entryList = new List('entry-list', options);
-
-</script>
