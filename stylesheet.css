@@ -1,3 +1,8 @@
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+
 body {
   font-family: Museo300;
   background: url(img/whitecoat.png) no-repeat center center fixed;
@@ -114,6 +119,10 @@ body {
   top: 4.8em;
   height: calc(100% - 4.8em);
   position: fixed;
+}
+
+.slide {
+  overflow: hidden;
 }
 
 #page1 {
