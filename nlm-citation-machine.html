@@ -27,7 +27,7 @@ title: NLM Citation Machine
   <div id="nlm-description" style="height:100%; width:50%; float:left; padding:3em; overflow:hidden">
     <h2 style="color:#00CC99; margin-left:auto; margin-right:auto; font-size: 2vw;">NLM Citation Machine</h1>
     <p style="color:white">NLM style citation machine for articles in <a href="http://www.ncbi.nlm.nih.gov/pubmed">PubMed</a> and books in <a href="https://books.google.com">Google Books</a>.</p>
-    <p style="color:white">Enter PubMed ID or ISBN number. Click generate. Add your pagination for PubMed articles.</p>
+    <p style="color:white">Enter PubMed ID or ISBN number. Click generate. Simple.</p>
     <p style="color:white">Useful references:</p>
     <ul>
       <li style="color:white">DiPiro: 0071800549</li>
@@ -103,7 +103,7 @@ function generateCitation() {
       }
       // generate NLM article citation depending if volume and issue are variables
       if (article.volume === '') {
-        var citation = name_nlm + article.title + ' ' + article.source + '. ' + article.pubdate +;
+        var citation = name_nlm + article.title + ' ' + article.source + '. ' + article.pubdate;
       } else {
         var citation = name_nlm + article.title + ' ' + article.source + '. ' + article.pubdate + ';' + article.volume + '(' + article.issue + '): ' + article.pages + '.';
       }
