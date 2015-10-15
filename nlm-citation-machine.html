@@ -103,13 +103,13 @@ function generateCitation() {
       }
       // generate NLM article citation depending if volume and issue are variables
       var citation = name_nlm + article.title + ' ' + article.source + '. ' + article.pubdate;
-      if article.volume != '' {
+      if (article.volume !== '') {
         citation += ';' + article.volume;
       }
-      if article.issue != '' {
+      if (article.issue != '') {
         citation += '(' + article.issue + ')';
       }
-      if article.pages != '' {
+      if (article.pages != '') {
         citation += ': ' + article.pages;
       }
       citation += '.';
