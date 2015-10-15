@@ -102,11 +102,22 @@ function generateCitation() {
         }
       }
       // generate NLM article citation depending if volume and issue are variables
-      if (article.volume === '') {
-        var citation = name_nlm + article.title + ' ' + article.source + '. ' + article.pubdate + '.';
-      } else {
-        var citation = name_nlm + article.title + ' ' + article.source + '. ' + article.pubdate + ';' + article.volume + '(' + article.issue + '): ' + article.pages + '.';
+      var citation = name_nlm + article.title + ' ' + article.source + '. ' + article.pubdate;
+      if article.volume != '' {
+        citation += ';' + article.volume;
       }
+      if article.issue != '' {
+        citation += '(' + article.issue + ')';
+      }
+      if article.pages != '' {
+        citation += ': ' + article.pages;
+      }
+      citation += '.'
+      // if (article.volume === '') {
+      //   var citation = name_nlm + article.title + ' ' + article.source + '. ' + article.pubdate + '.';
+      // } else {
+      //   var citation = name_nlm + article.title + ' ' + article.source + '. ' + article.pubdate + ';' + article.volume + '(' + article.issue + '): ' + article.pages + '.';
+      // }
     }
   }
 
