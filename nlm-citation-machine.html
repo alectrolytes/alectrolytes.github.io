@@ -54,7 +54,7 @@ function generateCitation() {
   var search = document.getElementById('query').value;
 
   // determines if input is ISBN or PubMedID
-  if (Number.isInteger(parseInt(search))) {
+  if (Number.isInteger(parseInt(search))) { // ISBN citation
     var search_length = search.length;
     if (search_length === 10 || search_length === 13) {
       // parse JSON into js object
@@ -80,7 +80,7 @@ function generateCitation() {
       }
       // generate NLM book citation
       var citation = name_nlm +  book.title + '. ' + book.publisher + '; ' + book.publishedDate + '. ' + book.pageCount + ' p.';
-    } else {
+    } else { // PubMed citation
       // parse JSON into js object
       var json_obj = JSON.parse(Get('http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&retmode=json&rettype=abstract&id=' + search));
       // isolate nested article object
@@ -113,11 +113,6 @@ function generateCitation() {
         citation += ': ' + article.pages;
       }
       citation += '.';
-      // if (article.volume === '') {
-      //   var citation = name_nlm + article.title + ' ' + article.source + '. ' + article.pubdate + '.';
-      // } else {
-      //   var citation = name_nlm + article.title + ' ' + article.source + '. ' + article.pubdate + ';' + article.volume + '(' + article.issue + '): ' + article.pages + '.';
-      // }
     }
   }
 
