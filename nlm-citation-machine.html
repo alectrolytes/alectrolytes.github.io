@@ -3,6 +3,20 @@ layout: default
 title: Team Nexus - NLM Citation Machine
 ---
 
+<!-- Facebook Like Script -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Google +1 Script -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+  <g:plusone></g:plusone>
+
 <!-- background tint-->
 <div style="height:100%; width:100%; background: rgba(255,255,255,.8)"></div>
 
@@ -21,6 +35,12 @@ title: Team Nexus - NLM Citation Machine
     </div>
   </div>
 </nav>
+
+<!-- Google +1 and Facebook Like buttons -->
+<div style="top:15%;right:15%;position: absolute">
+  <div class="fb-like" data-href="http://teamnex.us/nlm-citation-machine" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+  <div class="g-plusone" data-annotation="none"></div>
+</div>
 
 <!-- citation form -->
 <div style="height:60%; width:60%; background:rgba(0,0,0,0.9); position:fixed; top:50%; left:50%; transform: translate(-50%,-50%)">
