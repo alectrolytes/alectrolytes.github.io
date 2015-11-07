@@ -243,3 +243,7 @@ li {
 a {
   color: #00B386;
 }
+
+.social {
+  vertical-align: middle;
+}
