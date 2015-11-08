@@ -424,20 +424,3 @@
 
 
 }(window.jQuery);
-
-// --- navbar buttons ---
-$('#home-btn').click(function() {
-  $('#pages').moveTo(1);
-});
-
-$('#about-btn').click(function() {
-  $('#pages').moveTo(2);
-});
-
-$('#projects-btn').click(function() {
-  $('#pages').moveTo(3);
-});
-
-$('#challenges-btn').click(function() {
-  $('#pages').moveTo(4);
-});

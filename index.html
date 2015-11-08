@@ -130,3 +130,22 @@ $(document).ready(function() {
     $('#fullpage').fullpage();
 });
 </script>
+
+<!-- Navbar Buttons -->
+<script>
+$('#home-btn').click(function() {
+  $.fn.fullpage.moveTo(0);
+});
+
+$('#about-btn').click(function() {
+  $.fn.fullpage.moveTo(1);
+});
+
+$('#projects-btn').click(function() {
+  $.fn.fullpage.moveTo(2);
+});
+
+$('#challenges-btn').click(function() {
+  $.fn.fullpage.moveTo(3);
+});
+</script>
