@@ -247,3 +247,7 @@ a {
 .social {
   vertical-align: middle;
 }
+
+.fb_iframe_widget span {
+  vertical-align: top !important;
+}
