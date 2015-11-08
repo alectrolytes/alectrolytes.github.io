@@ -243,11 +243,3 @@ li {
 a {
   color: #00B386;
 }
-
-.social {
-  vertical-align: middle;
-}
-
-.fb_iframe_widget span {
-  vertical-align: top !important;
-}
