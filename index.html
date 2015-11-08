@@ -44,18 +44,18 @@ title: Team Nexus - A convergence of awesome ideas!
 </nav>
 
 <!-- Skeleton -->
-<div class="pages">
+<div id="fullpage">
 
   <!-- Home section -->
-  <section id="page1" class="slide">
+  <div id="page1" class="section">
     <div class="container">
       <h1 style="font-family: HelveticaNeueLTStd; font-size: 4.5em; text-align: center; margin: 0.2em">Welcome Friends!</h1>
       <p style="font-size: 2em; font-family: Museo500; text-align: center; margin: 0 7%">This developing website is dedicated to you and everyone else for being awesome in some way. You all deserve credit for leaving a positive imprint and being my motivation to continue improving.</p>
     </div>
-  </section>
+  </div>
 
   <!-- About section -->
-  <section id="page2" class="slide">
+  <div id="page2" class="section">
     <div id="profile-pic"><img style="display: inline-block; vertical-align: middle; height: 80%" src="img/bw_profile.jpg" alt="Picture of Me!"/></div>
     <div class="container">
       <h1>Yo, I'm Alec.</h1>
@@ -64,19 +64,19 @@ title: Team Nexus - A convergence of awesome ideas!
       <p>Team Nexus is an organization where awesome ideas converge. I am the only permanent member. The other members are the inspiring people who have helped or collaborated with me. I learn from others and try to emulate them with my own style. Without the wonderful help and positive influence of the people around me, I would not get to where I am today. These lessons are treasured and referenced to achieve success.</p>
       <p>You can email me at: <a href="mailto:alec@teamnex.us">alec@teamnex.us</a></p>
     </div>
-  </section>
+  </div>
 
   <!-- Projects section -->
-  <section id="page3" class="slide">
+  <div id="page3" class="section">
     <div class="container">
       <h1>Projects</h1>
       <p>I take great pride in my work. Projects are collaboratively completed and then generously shared. Check out some of the projects I've worked on below. Some might prove useful!</p>
     </div>
     {% include projects.html %}
-  </section>
+  </div>
 
   <!-- Challenges section -->
-  <section id="page4" class="slide">
+  <div id="page4" class="section">
     <div class="row" style="height:30%">
       <div class="col-xs-8 col-md-8" style="height:100%">
         <div class="container" style="width: 90%; margin-left: 15%;">
@@ -101,7 +101,7 @@ title: Team Nexus - A convergence of awesome ideas!
       </div>
     </div>
     {% include interactive-table.html %}
-  </section>
+  </div>
 
 </div>
 
@@ -124,20 +124,9 @@ title: Team Nexus - A convergence of awesome ideas!
   });*/
 </script>
 
+<!-- fullPage scroll -->
 <script>
-$(".pages").onepage_scroll({
-   sectionContainer: "section",
-   easing: "ease",
-   animationTime: 500,
-   pagination: true,
-   updateURL: false,
-   beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
-   afterMove: function(index) {},   // This option accepts a callback function. The function will be called after the page moves.
-   loop: false,
-   keyboard: true,
-   responsiveFallback: false,       // You can fallback to normal page scroll by defining the width of the browser in which
-                                    // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
-                                    // the browser's width is less than 600, the fallback will kick in.
-   direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".
+$(document).ready(function() {
+    $('#fullpage').fullpage();
 });
 </script>
