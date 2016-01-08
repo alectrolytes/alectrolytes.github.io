@@ -3,6 +3,10 @@ layout: default
 title: Team Nexus - NLM Citation Machine
 ---
 
+  <link rel="stylesheet" href="/css/citation.css"/>
+</head>
+<body>
+
 <!-- Facebook Like Script -->
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -17,7 +21,7 @@ title: Team Nexus - NLM Citation Machine
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 
 <!-- background tint-->
-<div style="height:100%; width:100%; background: rgba(255,255,255,.8)"></div>
+<div id="bg-tint"></div>
 
 <!-- awesome zoom box navbar! -->
 <nav class="navbar-fixed-top" role="navigation">
@@ -36,29 +40,29 @@ title: Team Nexus - NLM Citation Machine
 </nav>
 
 <!-- Google +1 and Facebook Like buttons -->
-<div class="social" style="top:6em;left:1%;position:absolute">
+<div class="social">
   <span class="fb-like" data-href="http://teamnex.us/nlm-citation-machine" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" style="vertical-align:top !important"></span>
   <span class="g-plusone" data-size="medium" data-annotation="bubble"></span>
 </div>
 
 <!-- citation form -->
-<div style="height:60%; width:60%; background:rgba(0,0,0,0.9); position:fixed; top:50%; left:50%; transform: translate(-50%,-50%)">
-  <div id="nlm-description" style="height:100%; width:50%; float:left; padding:3em; overflow:hidden">
-    <h2 style="color:#00CC99; margin-left:auto; margin-right:auto; font-size: 2vw;">NLM Citation Machine</h1>
-    <p style="color:white">Generate NLM style citations for articles in <a href="http://www.ncbi.nlm.nih.gov/pubmed">PubMed</a> and books in <a href="https://books.google.com">Google Books</a>.</p>
-    <p style="color:white">Enter PubMed ID or ISBN number. Click generate. Simple.</p>
-    <p style="color:white">Useful references:</p>
+<div id="citation-container">
+  <div id="nlm-description">
+    <h2>NLM Citation Machine</h2>
+    <p>Generate NLM style citations for articles in <a href="http://www.ncbi.nlm.nih.gov/pubmed">PubMed</a> and books in <a href="https://books.google.com">Google Books</a>.</p>
+    <p>Enter PubMed ID or ISBN number. Click generate. Simple.</p>
+    <p>Useful references:</p>
     <ul>
-      <li style="color:white">DiPiro: 0071800549</li>
-      <li style="color:white">CHEST: 22315268</li>
-      <li style="color:white">ACC/AHA Cholesterol: 24239923</li>
+      <li>DiPiro: 0071800549</li>
+      <li>CHEST: 22315268</li>
+      <li>ACC/AHA Cholesterol: 24239923</li>
     </ul>
-    <p style="color:white">Recommendations for the website? Email me at: <a href="mailto:alec@teamnex.us">alec@teamnex.us</a></p>
+    <p>Recommendations for the website? Email me at: <a href="mailto:alec@teamnex.us">alec@teamnex.us</a></p>
   </div>
-  <form id="citation-form"style="height:100%; width:50%; float:right; text-align:center">
-    <input type="text" id="query" style="position:relative; width:80%; top:15%; margin:auto" placeholder="Enter PubMed ID or ISBN number here:"> <br>
-    <input type="button" id="generate-btn" style="color:white; background-color:#00CC99; border:none; position:relative; top:25%; margin:auto" value="Generate!" onclick="generateCitation()"> <br>
-    <textarea readonly id="citation" style="position:relative; height:40%; width:80%; top:35%; margin:auto; resize:none; overflow:auto" rows="5"></textarea>
+  <form id="citation-form">
+    <input type="text" id="query" placeholder="Enter PubMed ID or ISBN number here:"> <br>
+    <input type="button" id="generate-btn" value="Generate!" onclick="generateCitation()"> <br>
+    <textarea readonly id="citation" rows="5"></textarea>
   </form>
 </div>
 

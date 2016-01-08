@@ -1,0 +1,124 @@
+#fullpage {
+  top: 4.8em;
+  height: calc(100% - 4.8em);
+  width: 100%;
+  position: fixed;
+}
+
+.section {
+  overflow: hidden;
+}
+
+#page1 {
+}
+
+#page1 .container {
+  padding: 1em;
+  position: relative;
+  top: -25%;
+  left: 0%;
+  background-image: url(img/dark_carbonfiber_transparent.png);
+  color: #00CC99;
+  font-family: Mentone;
+  font-size: 0.8vw;
+}
+
+#page2 {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+#profile-pic {
+  float: left;
+  height: 100%;
+  width: 35%;
+  margin-left: 5%;
+  text-align: center;
+}
+
+#profile-pic:before {
+  content:'';
+  display: inline-block;
+  height:100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+
+#page2 .container {
+  float: right;
+  height: 100%;
+  width: 50%;
+  margin-right: 5%;
+  padding: 2.5%;
+}
+
+#page2 p {
+  font-size: 1.2vw;
+}
+
+#page3 {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#page3 .container {
+  padding: 1em;
+  width: 80%;
+}
+
+#page3 .container p {
+  font-size: 1.5vw;
+}
+
+.main {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.5vmin;
+}
+
+.main .row {
+  margin: 5% 0;
+}
+
+.view img {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.content p{
+  font-size: 2vh;
+}
+
+.info {
+  font-family: Museo300;
+}
+
+#page4 {
+  background-color: rgba(255, 255, 255, 1);;
+}
+
+#page4 .container {
+  padding: 1em;
+}
+
+.challenge-form {
+  float: right;
+}
+
+.container h1 {
+  margin-bottom: 0.5em;
+  font-size: 3.5vw;
+  font-family: Mentone;
+  color: #00CC99;
+}
+
+p {
+  font-size: 1.2vw;
+}
+
+li {
+  font-size: 1vw;
+}
+
+a {
+  color: #00B386;
+}

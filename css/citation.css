@@ -1,0 +1,83 @@
+#bg-tint {
+  height:100%;
+  width:100%;
+  background: rgba(255,255,255,.8);
+}
+
+.social {
+   top: 6em;
+   left: 1%;
+   position: absolute;
+}
+
+#citation-container {
+  height: 60%;
+  width: 60%;
+  background: rgba(0,0,0,0.9);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#nlm-description {
+  height: 100%;
+  width: 50%;
+  float: left;
+  padding: 3em;
+  overflow: hidden;
+}
+
+#citation-form {
+  height: 100%;
+  width: 50%;
+  float: right;
+  text-align: center;
+}
+
+#query {
+  position: relative;
+  width: 80%;
+  top: 15%;
+  margin: auto;
+}
+
+#generate-btn {
+  color: white;
+  background-color: #00CC99;
+  border: none;
+  position: relative;
+  top: 25%;
+  margin: auto;
+}
+
+#citation {
+  position: relative;
+  height: 40%;
+  width: 80%;
+  top: 35%;
+  margin: auto;
+  resize: none;
+  overflow: auto;
+}
+
+h2 {
+  color: #00CC99;
+  margin-left: auto;
+  margin-right:auto;
+  font-size: 2vw;
+}
+
+p {
+  font-size: 1.2vw;
+  color: white;
+}
+
+li {
+  font-size: 1vw;
+  color: white;
+}
+
+a {
+  color: #00B386;
+}
