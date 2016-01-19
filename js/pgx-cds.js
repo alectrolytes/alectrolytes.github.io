@@ -1,7 +1,8 @@
 var main = function() {
   $('.add').click(function() {
-    $('.medications').append($('li'));
+    var newmed = $('li').last();
+    $('.medications').append(newmed);
   });
-}
+};
 
 $(document).ready(main);
