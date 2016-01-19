@@ -1,6 +1,6 @@
 var main = function() {
   $('.add').click(function() {
-    $('.medications:last-child').clone().appendTo('li');
+    $('li:last').clone().appendTo('ul:last');
   });
 };
 
