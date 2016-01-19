@@ -1,6 +1,6 @@
 var main = function() {
   $('.add').click(function() {
-    var newmed = $('li').last();
+    var newmed = $('li:last');
     $('.medications').append(newmed);
   });
 };
