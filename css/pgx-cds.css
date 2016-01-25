@@ -43,7 +43,10 @@
 }
 
 .details button {
-  margin: 1em 2em;
+  position: relative;
+  top: 50%;
+  transform: translate(0,-50%);
+  margin-left: 1em;
 }
 
 .details p {
