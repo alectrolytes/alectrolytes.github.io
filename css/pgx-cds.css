@@ -19,18 +19,27 @@
   height: 80%;
   width: 80%;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  top: 10%;
+  left: 10%;
+  overflow: auto;
 }
 
 .medication {
-  height: 10%;
   width: 100%;
-  background-color: #00CC99;
   float: left;
 }
 
-.medication button {
+.current {
+  border-color: #00CC99;
+  border-width: medium;
+}
+
+.details button {
   margin: 1em 2em;
+}
+
+.order {
+  height: 50%;
+  width: 100%;
+  background-color: #00CC99;
 }
