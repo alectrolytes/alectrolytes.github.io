@@ -8,6 +8,11 @@
   position: fixed;
 }
 
+.content {
+  height: 100% - 4.8em;
+  width: 100%;
+}
+
 .cpoe {
   height: 80%;
   width: 80%;
@@ -17,12 +22,13 @@
   transform: translate(-50%,-50%);
 }
 
-li {
-  display: inline;
+.medication {
+  height: 10%;
   width: 100%;
   background-color: #00CC99;
+  display: inline;
 }
 
-li p {
+.medication p {
   color: #FFFFFF;
 }
