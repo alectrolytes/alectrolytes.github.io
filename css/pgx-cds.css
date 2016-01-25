@@ -49,6 +49,10 @@
   margin-left: 1em;
 }
 
+.details .remove {
+  display: none;
+}
+
 .details p {
   font-size: 2em;
   position: relative;

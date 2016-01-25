@@ -5,6 +5,11 @@ var main = function() {
     $('.medication:last').clone(true).appendTo('.cpoe:last');
     $(this).parent().append('<p>Select medication</p>');
     $(this).hide();
+    $(this).parent().children('.remove').show();
+  });
+
+  $('.remove').click(function() {
+    $(this).parent().hide();
   });
 
   $('.medication').click(function() {
