@@ -3,12 +3,11 @@ var main = function() {
 
   $('.add').click(function() {
     $('.medication:last').clone(true).appendTo('.cpoe:last');
+    $(this).parent().append('<p>Select medication</p>');
     $(this).hide();
   });
 
   $('.medication').click(function() {
-    $('<p>').text("Clicked!");
-
     $('.details').removeClass('current');
     $('.order').hide();
 
