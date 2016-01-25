@@ -28,9 +28,9 @@
   height: 10%;
   width: 100%;
   background-color: #00CC99;
-  display: inline;
+  float: left;
 }
 
-.medication p {
-  color: #FFFFFF;
+.medication button {
+  margin: 1em 2em;
 }
