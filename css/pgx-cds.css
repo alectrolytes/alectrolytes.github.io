@@ -46,7 +46,7 @@
   float: left;
   top: 50%;
   transform: translate(0,-50%);
-  margin-left: 1em;
+  margin: 0 auto;
 }
 
 .details .remove {
@@ -59,7 +59,6 @@
   position: relative;
   top: 50%;
   transform: translate(0,-50%);
-  margin-left: 1em;
 }
 
 .order {
