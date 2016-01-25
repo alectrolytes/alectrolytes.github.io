@@ -8,11 +8,11 @@ var main = function() {
   $('.medication').click(function() {
     $('<p>').text("Clicked!");
 
-    $('this button').hide();
-    $('.medication').removeClass('current');
+    $(this).children('button').hide();
+    $('.details').removeClass('current');
     $('.order').hide();
 
-    $(this).addClass('current');
+    $(this).children('.details').addClass('current');
     $(this).children('.order').show();
   });
 };
