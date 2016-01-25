@@ -39,11 +39,11 @@
   height: 5em;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.5);
-  display: inline;
 }
 
 .details button {
   position: relative;
+  float: left;
   top: 50%;
   transform: translate(0,-50%);
   margin-left: 1em;
@@ -54,6 +54,7 @@
 }
 
 .details p {
+  float: left;
   font-size: 2em;
   position: relative;
   top: 50%;
