@@ -9,7 +9,7 @@ var main = function() {
   });
 
   $('.remove').click(function() {
-    $(this).parent().hide();
+    $(this).parent().parent().hide();
   });
 
   $('.medication').click(function() {
