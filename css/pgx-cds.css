@@ -46,7 +46,7 @@
   float: left;
   top: 50%;
   transform: translate(0,-50%);
-  margin: 0 auto;
+  margin: 0 1em;
 }
 
 .details .remove {
