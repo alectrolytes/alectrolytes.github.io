@@ -15,8 +15,9 @@
 #page1 .container {
   padding: 1em;
   position: relative;
-  top: -25%;
-  left: 0%;
+  width: 60%;
+  top: 20%;
+  left: 20%;
   background-image: url(/img/dark_carbonfiber_transparent.png);
   color: #00CC99;
   font-family: Mentone;
