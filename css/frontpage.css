@@ -59,7 +59,7 @@
 
 #page3 {
   background-image: url(/img/whitecoat.png);
-  filter: blur(5px);
+  filter: blur(20px);
 }
 
 #page3 .container {
