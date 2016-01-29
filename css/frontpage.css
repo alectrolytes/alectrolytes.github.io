@@ -58,8 +58,7 @@
 }
 
 #page3 {
-  background-image: url(/img/whitecoat.png);
-  filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 #page3 .container {
