@@ -67,6 +67,10 @@ title: Team Nexus - NLM Citation Machine
 </div>
 
 <script>
+$('form').keypress(function(event) {
+    return event.keyCode != 13;
+});
+
 function Get(yourUrl){
   var Httpreq = new XMLHttpRequest();
   Httpreq.open("GET",yourUrl,false);
