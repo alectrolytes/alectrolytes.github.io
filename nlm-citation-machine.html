@@ -60,16 +60,17 @@ title: Team Nexus - NLM Citation Machine
     <p>Recommendations for the website? Email me at: <a href="mailto:alec@teamnex.us">alec@teamnex.us</a></p>
   </div>
   <form id="citation-form">
-    <input type="text" id="query" placeholder="Enter PubMed ID or ISBN number here:"> <br>
-    <input type="button" id="generate-btn" value="Generate!" onclick="generateCitation()"> <br>
+    <input type="search" id="query" placeholder="Enter PubMed ID or ISBN number here:"> <br>
+    <input type="submit" id="generate-btn" value="Generate!" onclick="generateCitation()"> <br>
     <textarea readonly id="citation" rows="5"></textarea>
   </form>
 </div>
 
 <script>
-$('form').keypress(function(event) {
-    return event.keyCode != 13;
-});
+$('#citation-form').submit(function() {
+  generateCitation();
+  return false;
+})
 
 function Get(yourUrl){
   var Httpreq = new XMLHttpRequest();
