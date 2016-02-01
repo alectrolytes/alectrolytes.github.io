@@ -24,8 +24,10 @@ var main = function() {
   });
 
   $('.med').click(function() {
-    var report = $(this).closest('.medication').find('.report');
-    $(this).children('p').clone().appendTo(report);
+    if ($(this).children().hasClass('pgx-warning')) {
+      var report = $(this).closest('.medication').find('.report');
+      $(this).children('p').clone().appendTo(report);
+    }
   });
 };
 
