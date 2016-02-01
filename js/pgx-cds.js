@@ -22,6 +22,11 @@ var main = function() {
     $(this).children('.order').show();
     $(this).children('.report').show();
   });
+
+  $('.med').click(function() {
+    var report = $(this).closest('.medication').find('.report');
+    $(this).children('p').appendTo(report);
+  });
 };
 
 $(document).ready(main);
