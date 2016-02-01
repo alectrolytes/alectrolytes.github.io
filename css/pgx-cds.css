@@ -67,6 +67,12 @@
   background-color: rgba(0, 204, 153, 0.5);
 }
 
+.report {
+  height: 4em;
+  width: 100%;
+  background-color: rgba(169, 131, 7, 0.5);
+}
+
 .med-list {
   height: 100%;
   width: 30%;
