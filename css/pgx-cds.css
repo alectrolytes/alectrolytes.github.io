@@ -81,6 +81,11 @@
 .med {
   height: 20%;
   width: 100%;
+  dip
+}
+
+td p {
+  float: left;
 }
 
 table, th, td {
