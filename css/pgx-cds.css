@@ -70,7 +70,7 @@
 .report {
   height: 4em;
   width: 100%;
-  background-color: rgba(169, 131, 7, 0.5);
+  background-color: rgba(255, 255, 0, 0.5);
 }
 
 .med-list {
@@ -84,6 +84,6 @@
 }
 
 table, th, td {
-    border: 1px solid #00CC99;
+    border: 1px solid #00CC99 !important;
     border-collapse: collapse;
 }

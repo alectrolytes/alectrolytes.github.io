@@ -1,5 +1,6 @@
 var main = function() {
   $('.order').hide();
+  $('.report').hide();
 
   $('.add').click(function() {
     $('.medication:last').clone(true).appendTo('.cpoe:last');
@@ -15,9 +16,11 @@ var main = function() {
   $('.medication').click(function() {
     $('.details').removeClass('current');
     $('.order').hide();
+    $('.report').hide();
 
     $(this).children('.details').addClass('current');
     $(this).children('.order').show();
+    $(this).children('.report').show();
   });
 };
 
