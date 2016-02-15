@@ -25,7 +25,7 @@ var main = function() {
 
   $('.med').click(function() {
     var report = $(this).closest('.medication').find('.report');
-    report.remove('p');
+    report.children('p').report.remove();
     if ($(this).children().hasClass('pgx-warning')) {
       $(this).children('p').clone().appendTo(report);
     }
