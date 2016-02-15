@@ -4,6 +4,7 @@ title: Team Nexus - NLM Citation Machine
 ---
 
   <link rel="stylesheet" href="/css/citation.css"/>
+  <meta name="description" content="Automagically generate an NLM citation using a PubMed ID or an ISBN."/>
 </head>
 <body>
 
@@ -50,7 +51,7 @@ title: Team Nexus - NLM Citation Machine
   <div id="nlm-description">
     <h2>NLM Citation Machine</h2>
     <p>Generate NLM style citations for articles in <a href="http://www.ncbi.nlm.nih.gov/pubmed">PubMed</a> and books in <a href="https://books.google.com">Google Books</a>.</p>
-    <p>Enter PubMed ID or ISBN number. Click generate. Simple.</p>
+    <p>Enter PubMed ID or ISBN. Click generate. Simple.</p>
     <p>Useful references:</p>
     <ul>
       <li>DiPiro: 0071800549</li>
@@ -61,7 +62,7 @@ title: Team Nexus - NLM Citation Machine
     <p>Recommendations for the website? Email me at: <a href="mailto:alec@teamnex.us">alec@teamnex.us</a></p>
   </div>
   <form id="citation-form">
-    <input type="search" id="query" placeholder="Enter PubMed ID or ISBN number here:"> <br>
+    <input type="search" id="query" placeholder="Enter PubMed ID or ISBN here:"> <br>
     <input type="submit" id="generate-btn" value="Generate!" onclick="generateCitation()"> <br>
     <textarea readonly id="citation" rows="5"></textarea>
   </form>
