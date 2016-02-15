@@ -1,6 +1,7 @@
 var main = function() {
   $('.order').hide();
   $('.report').hide();
+  $('.info-btn').hide();
 
   $('.add').click(function() {
     $('.medication:last').clone(true).appendTo('.cpoe:last');
@@ -28,6 +29,7 @@ var main = function() {
     report.children('p').remove();
     if ($(this).children().hasClass('pgx-warning')) {
       $(this).children('p').clone().appendTo(report);
+      report.children('.info-btn').show();
     }
   });
 };
