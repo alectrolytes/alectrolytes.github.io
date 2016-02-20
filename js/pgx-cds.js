@@ -29,7 +29,7 @@ var main = function() {
     report.children('p').remove();
     report.children('.info-btn').hide();
     if ($(this).children().hasClass('pgx-warning')) {
-      $(this).children('<p><strong>PGX Warning:</strong> Codeine (CYP2D6 substrate) is contraindicated patient John Doe who exhibits weak expression of CYP2D6. Guaifenesin is recommended as an alternative.</p>').appendTo(report);
+      $('<p><strong>PGX Warning:</strong> Codeine (CYP2D6 substrate) is contraindicated patient John Doe who exhibits weak expression of CYP2D6. Guaifenesin is recommended as an alternative.</p>').appendTo(report);
       report.children('.info-btn').show();
     }
   });
