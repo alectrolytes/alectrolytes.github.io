@@ -78,9 +78,7 @@
 }
 
 .current-med {
-  border-style: solid;
-  border-color: #CC0033;
-  border-width: thin;
+  background-color: #00CC99;
 }
 
 .report {
