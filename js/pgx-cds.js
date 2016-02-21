@@ -33,6 +33,17 @@ var main = function() {
       report.children('.info-btn').show();
     }
   });
+
+  $('.info-btn').click(function() {
+    $('#more-info').show();
+    $('#fade').show();
+  });
+
+  $('#close-btn').click(function() {
+    $('#more-info').hide();
+    $('#fade').hide();
+  });
+
 };
 
 $(document).ready(main);
