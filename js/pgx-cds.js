@@ -25,7 +25,7 @@ var main = function() {
   });
 
   $('.med').click(function() {
-    $('.med').removeClass('current-med');
+    $(this).closest('.list').find('.med').removeClass('current-med');
     $(this).addClass('current-med');
 
     var report = $(this).closest('.medication').find('.report');
