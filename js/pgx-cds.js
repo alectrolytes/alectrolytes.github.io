@@ -15,11 +15,11 @@ var main = function() {
   });
 
   $('.medication').click(function() {
-    $('.details').removeClass('current');
+    $('.details').removeClass('current-details');
     $('.order').hide();
     $('.report').hide();
 
-    $(this).children('.details').addClass('current');
+    $(this).children('.details').addClass('current-details');
     $(this).children('.order').show();
     $(this).children('.report').show();
   });
