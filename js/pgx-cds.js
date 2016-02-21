@@ -26,7 +26,7 @@ var main = function() {
 
   $('.med').click(function() {
     $('.med').removeClass('current-med');
-    $(this).children('.med').addClass('current-med');
+    $(this).addClass('current-med');
 
     var report = $(this).closest('.medication').find('.report');
     report.children('p').remove();
