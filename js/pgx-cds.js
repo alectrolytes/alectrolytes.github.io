@@ -25,6 +25,9 @@ var main = function() {
   });
 
   $('.med').click(function() {
+    $('.med').removeClass('current-details');
+    $(this).children('.med').addClass('current-med');
+
     var report = $(this).closest('.medication').find('.report');
     report.children('p').remove();
     report.children('.info-btn').hide();
