@@ -132,9 +132,14 @@
   overflow: auto;
 }
 
+#more-info h1 {
+  left: 50%;
+  transform: translate(0,-50%);
+}
+
 #close-btn {
   position: relative;
-  bottom: 10%;
+  bo;
   right: 10%;
 }
 
