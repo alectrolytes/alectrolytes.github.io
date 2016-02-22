@@ -77,6 +77,10 @@
   width: 100%;
 }
 
+.med p {
+  font-size: large;
+}
+
 .current-med {
   background-color: #00CC99;
 }
