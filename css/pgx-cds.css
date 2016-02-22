@@ -132,6 +132,12 @@
   overflow: auto;
 }
 
+#close-btn {
+  position: relative;
+  bottom: 10%;
+  right: 10%;
+}
+
 td p {
   float: left;
 }
