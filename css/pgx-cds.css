@@ -137,14 +137,30 @@
 }
 
 #more-info h1 {
-  position: relative;
   display: table;
   margin: 0 auto;
 }
 
+#description {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  height: 40%;
+  width: 40%;
+}
+
+#support {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  height: 40%;
+  width: 40%;
+}
+
 #close-btn {
-  position: relative;
-  left: 80%;
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
 }
 
 td p {
