@@ -141,6 +141,11 @@
   margin: 0 auto;
 }
 
+#more-info h2 {
+  display: table;
+  margin: 0 auto;
+}
+
 #description {
   position: absolute;
   top: 40%;
