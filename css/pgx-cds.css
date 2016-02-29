@@ -140,6 +140,11 @@
   text-align: center;
 }
 
+#more-info h3 {
+  position: absolute;
+  top: 25%;
+}
+
 #description {
   position: absolute;
   top: 40%;
@@ -147,6 +152,7 @@
   height: 40%;
   width: 35%;
   text-align: left;
+  font-size: 1.8vh;
 }
 
 #support {
@@ -156,6 +162,7 @@
   height: 40%;
   width: 35%;
   text-align: left;
+  font-size: 1.8vh;
 }
 
 #close-btn {
