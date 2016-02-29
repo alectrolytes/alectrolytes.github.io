@@ -136,14 +136,8 @@
   overflow: auto;
 }
 
-#more-info h1 {
-  display: table;
-  margin: 0 auto;
-}
-
-#more-info h3 {
-  display: table;
-  margin: 0 auto;
+#more-info {
+  text-align: center;
 }
 
 #description {
@@ -152,6 +146,7 @@
   left: 10%;
   height: 40%;
   width: 35%;
+  text-align: left;
 }
 
 #support {
@@ -160,6 +155,7 @@
   right: 10%;
   height: 40%;
   width: 35%;
+  text-align: left;
 }
 
 #close-btn {
