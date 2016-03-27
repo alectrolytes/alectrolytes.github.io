@@ -46,7 +46,7 @@ var main = function() {
   });
 
   $('#close-btn').click(function() {
-    $('#more-info').hide();
+    $(this).parent().hide();
     $('#fade').hide();
   });
 
