@@ -46,7 +46,8 @@ var main = function() {
   });
 
   $('#close-btn').click(function() {
-    $(this).parent().hide();
+    $('#more-info').hide();
+    $('case').hide();
     $('#fade').hide();
   });
 

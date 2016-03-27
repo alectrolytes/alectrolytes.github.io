@@ -170,7 +170,7 @@
   font-size: 1.8vh;
 }
 
-#close-btn {
+.close-btn {
   position: absolute;
   right: 10%;
   bottom: 10%;
