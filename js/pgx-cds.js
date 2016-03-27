@@ -47,7 +47,7 @@ var main = function() {
 
   $('#close-btn').click(function() {
     $('#more-info').hide();
-    $('case').hide();
+    $('#case').hide();
     $('#fade').hide();
   });
 
