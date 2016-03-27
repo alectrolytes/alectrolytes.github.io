@@ -3,6 +3,9 @@ var main = function() {
   $('.report').hide();
   $('.info-btn').hide();
 
+  $('#fade').show();
+  $('#case').show();
+
   $('.add').click(function() {
     $('.medication:last').clone(true).appendTo('.cpoe:last');
     $(this).parent().append('<p>Select medication</p>');
