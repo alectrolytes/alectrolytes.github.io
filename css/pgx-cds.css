@@ -150,6 +150,10 @@
   font-size: 3vh;
 }
 
+#case p {
+  font-size: 1.2vw;
+}
+
 #description {
   position: absolute;
   top: 40%;
