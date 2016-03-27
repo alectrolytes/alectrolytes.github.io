@@ -47,6 +47,10 @@ var main = function() {
 
   $('#close-btn').click(function() {
     $('#more-info').hide();
+    $('#fade').hide();
+  });
+
+  $('#begin-btn').click(function() {
     $('#case').hide();
     $('#fade').hide();
   });

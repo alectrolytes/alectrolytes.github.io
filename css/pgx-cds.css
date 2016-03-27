@@ -176,6 +176,12 @@
   bottom: 10%;
 }
 
+#begin-btn {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+}
+
 td p {
   float: left;
 }
