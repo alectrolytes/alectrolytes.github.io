@@ -18,14 +18,16 @@
 .title {
   position: fixed;
   width: 80%;
-  top: 20%;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .cpoe {
   height: 40%;
   width: 80%;
   position: fixed;
-  top: 40%;
+  top: 20%;
   left: 10%;
   overflow: auto;
 }
