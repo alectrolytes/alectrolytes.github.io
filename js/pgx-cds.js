@@ -59,8 +59,8 @@ var main = function() {
   });
 
   $('.med').click(function() {
-    $(this).closest('.list').find('.med').removeClass('current-med');
-    $(this).addClass('current-med');
+    $(this).closest('.list').find('.med').removeClass('current');
+    $(this).addClass('current');
 
     var report = $(this).closest('.medication').find('.report');
     report.children('p').remove();
@@ -75,17 +75,48 @@ var main = function() {
     $('#frequency-table tbody').remove();
 
     if ($(this).is('#acetaminophen')) {
-      populateTable($('#strength-table'), acetaminophen.strength);
-      populateTable($('#route-table'), acetaminophen.route);
-      populateTable($('#frequency-table'), acetaminophen.frequency);
+      populateStrengthTable($('#strength-table'), acetaminophen.strength);
+      populateRouteTable($('#route-table'), acetaminophen.route);
+      populateFrequencyTable($('#frequency-table'), acetaminophen.frequency);
     }
   });
 
-  function populateTable(table, list) {
+  $('.strength').click(function() {
+    $(this).closest('.list').find('.strength').removeClass('current');
+    $(this).addClass('current');
+  });
+
+  $('.route').click(function() {
+    $(this).closest('.list').find('.strength').removeClass('current');
+    $(this).addClass('current');
+  });
+
+  $('.frequency').click(function() {
+    $(this).closest('.list').find('.strength').removeClass('current');
+    $(this).addClass('current');
+  });
+
+  function populateStrengthTable(table, list) {
       table.append('<tbody class="list"></tbody>');
 
       for (i in list) {
-        table.children().append('<tr><td><p>' + list[i] + '</p></td></tr>');
+        table.children().append('<tr><td class="strength"><p>' + list[i] + '</p></td></tr>');
+      }
+  }
+
+  function populateRouteTable(table, list) {
+      table.append('<tbody class="list"></tbody>');
+
+      for (i in list) {
+        table.children().append('<tr><td class="route"><p>' + list[i] + '</p></td></tr>');
+      }
+  }
+
+  function populateFrequencyTable(table, list) {
+      table.append('<tbody class="list"></tbody>');
+
+      for (i in list) {
+        table.children().append('<tr><td class="frequency"><p>' + list[i] + '</p></td></tr>');
       }
   }
 

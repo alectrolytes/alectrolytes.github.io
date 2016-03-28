@@ -70,6 +70,7 @@
   height: 20em;
   width: 100%;
   padding: 0;
+  margin: 0;
   background-color: rgba(0, 204, 153, 0.3);
 }
 
@@ -106,7 +107,19 @@ td {
   font-size: 1.4em;
 }
 
-.current-med {
+.strength p {
+  font-size: 1.4em;
+}
+
+.route p {
+  font-size: 1.4em;
+}
+
+.frequency p {
+  font-size: 1.4em;
+}
+
+.current {
   background-color: #00CC99;
 }
 
