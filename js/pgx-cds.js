@@ -74,12 +74,10 @@ var main = function() {
     $('#route-table tbody').remove();
     $('#frequency-table tbody').remove();
 
-    $('#strength-table').append('<tbody class="list"><tr><td id="acetaminophen" class="med"><p>Acetaminophen</p></td></tr></tbody>');
-
     if ($(this).is('#acetaminophen')) {
-      populateTable(document.getElementById('strength-table'), acetaminophen['strength']);
-      populateTable(document.getElementById('route-table'), acetaminophen['route']);
-      populateTable(document.getElementById('frequency-table'), acetaminophen['frequency']);
+      populateTable($('#strength-table'), acetaminophen['strength']);
+      populateTable($('#route-table'), acetaminophen['route']);
+      populateTable($('#frequency-table'), acetaminophen['frequency']);
     }
   });
 
