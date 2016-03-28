@@ -72,6 +72,10 @@
   background-color: rgba(0, 204, 153, 0.3);
 }
 
+.order li {
+  display: inline-block;
+}
+
 .med-list {
   height: 100%;
   width: 40%;
