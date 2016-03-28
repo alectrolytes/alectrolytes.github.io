@@ -75,9 +75,9 @@ var main = function() {
     $('#frequency-table tbody').remove();
 
     if ($(this).is('#acetaminophen')) {
-      populateTable($('#strength-table'), acetaminophen('0'));
-      populateTable($('#route-table'), acetaminophen('1'));
-      populateTable($('#frequency-table'), acetaminophen('2'));
+      populateTable($('#strength-table'), acetaminophen['0']);
+      populateTable($('#route-table'), acetaminophen['1']);
+      populateTable($('#frequency-table'), acetaminophen['2']);
     }
   });
 
