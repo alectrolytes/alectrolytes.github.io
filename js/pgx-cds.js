@@ -74,6 +74,8 @@ var main = function() {
     $('#route-table tbody').remove();
     $('#frequency-table tbody').remove();
 
+    document.getElementById('strength-table').append('<tbody class="list"><tr><td id="acetaminophen" class="med"><p>Acetaminophen</p></td></tr></tbody>');
+
     if ($(this).is('#acetaminophen')) {
       populateTable(document.getElementById('strength-table'), acetaminophen['strength']);
       populateTable(document.getElementById('route-table'), acetaminophen['route']);
