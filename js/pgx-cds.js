@@ -81,19 +81,8 @@ var main = function() {
     }
   });
 
-  $('.strength').on('click', function() {
-    $(this).closest('.list').find('.strength').removeClass('current');
-    $(this).addClass('current');
-    console.log('hellow');
-  });
-
-  $('.route').click(function() {
-    $(this).closest('.list').find('.route').removeClass('current');
-    $(this).addClass('current');
-  });
-
-  $('.frequency').click(function() {
-    $(this).closest('.list').find('.frequency').removeClass('current');
+  $('.table').on('click', 'td', function() {
+    $(this).closest('.list').find('.current').removeClass('current');
     $(this).addClass('current');
   });
 
