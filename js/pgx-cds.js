@@ -74,6 +74,8 @@ var main = function() {
     $('#route-table tbody').remove();
     $('#frequency-table tbody').remove();
 
+    console.log(acetaminophen['0']);
+
     if ($(this).is('#acetaminophen')) {
       populateTable($('#strength-table'), acetaminophen['0']);
       populateTable($('#route-table'), acetaminophen['1']);
