@@ -88,7 +88,7 @@ var main = function() {
         table.append('<tr><td><p>');
         table.append(list[i]);
         table.append('</p></td></tr>');
-      }
+      };
 
       table.append('</tbody>');
   }
