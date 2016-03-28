@@ -76,10 +76,11 @@ var main = function() {
 
     if ($(this).is('#acetaminophen')) {
       populateTable(document.getElementById('strength-table'), acetaminophen['strength']);
-      populateTable(document.getElementById('route-table', acetaminophen['route']);
-      populateTable(document.getElementById('frequency-table', acetaminophen['frequency']);
+      populateTable(document.getElementById('route-table'), acetaminophen['route']);
+      populateTable(document.getElementById('frequency-table'), acetaminophen['frequency']);
     }
   });
+
   function populateTable(table, list) {
       table.html('<tbody class="list">');
 
