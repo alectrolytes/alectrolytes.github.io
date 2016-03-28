@@ -86,7 +86,7 @@ var main = function() {
 
       for (i in list) {
         table.append('<tr><td><p>');
-        table.append(i);
+        table.append(list[i]);
         table.append('</p></td></tr>');
       }
 
