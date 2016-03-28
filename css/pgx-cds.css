@@ -69,10 +69,25 @@
 
 .med-list {
   height: 100%;
-  width: 30%;
+  width: 40%;
 }
 
-.med {
+.strength-list {
+  height: 100%;
+  width: 20%;
+}
+
+.route-list {
+  height: 100%;
+  width: 20%;
+}
+
+.frequency-list {
+  height: 100%;
+  width: 20%;
+}
+
+td {
   height: 4em;
   width: 100%;
 }
