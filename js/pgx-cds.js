@@ -74,13 +74,11 @@ var main = function() {
     $('#route-table tbody').remove();
     $('#frequency-table tbody').remove();
 
-    console.log(acetaminophen.strength);
-
-    // if ($(this).is('#acetaminophen')) {
-    //   populateTable($('#strength-table'), acetaminophen);
-    //   populateTable($('#route-table'), acetaminophen['1']);
-    //   populateTable($('#frequency-table'), acetaminophen['2']);
-    // }
+    if ($(this).is('#acetaminophen')) {
+      populateTable($('#strength-table'), acetaminophen.strength);
+      populateTable($('#route-table'), acetaminophen.route);
+      populateTable($('#frequency-table'), acetaminophen.frequency);
+    }
   });
 
   function populateTable(table, list) {
