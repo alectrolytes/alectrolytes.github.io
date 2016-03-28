@@ -82,10 +82,10 @@ var main = function() {
   });
 
   function populateTable(table, list) {
-      table.children().append('<tbody class="list"></tbody>');
+      table.append('<tbody class="list"></tbody>');
 
       for (i in list) {
-        table.html('<tr><td><p>' + list[i] + '</p></td></tr>');
+        table.children().append('<tr><td><p>' + list[i] + '</p></td></tr>');
       }
   }
 
