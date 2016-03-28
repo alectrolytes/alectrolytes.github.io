@@ -81,7 +81,7 @@ var main = function() {
     }
   });
 
-  $('.strength').click(function() {
+  $('.strength').on('click', function() {
     $(this).closest('.list').find('.strength').removeClass('current');
     $(this).addClass('current');
   });
