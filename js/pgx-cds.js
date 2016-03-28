@@ -87,12 +87,12 @@ var main = function() {
   });
 
   $('.route').click(function() {
-    $(this).closest('.list').find('.strength').removeClass('current');
+    $(this).closest('.list').find('.route').removeClass('current');
     $(this).addClass('current');
   });
 
   $('.frequency').click(function() {
-    $(this).closest('.list').find('.strength').removeClass('current');
+    $(this).closest('.list').find('.frequency').removeClass('current');
     $(this).addClass('current');
   });
 
