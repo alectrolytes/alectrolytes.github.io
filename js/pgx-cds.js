@@ -82,15 +82,15 @@ var main = function() {
   });
 
   function populateTable(table, list) {
-      table.html('<tbody class="list">');
+      table.append('<tbody class="list">');
 
       for (i in list) {
-        table.html('<tr><td><p>');
-        table.html(i);
-        table.html('</p></td></tr>');
+        table.append('<tr><td><p>');
+        table.append(i);
+        table.append('</p></td></tr>');
       }
 
-      table.html('</tbody>');
+      table.append('</tbody>');
   }
 
   $('.info-btn').click(function() {
