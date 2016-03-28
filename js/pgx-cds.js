@@ -84,6 +84,7 @@ var main = function() {
   $('.strength').on('click', function() {
     $(this).closest('.list').find('.strength').removeClass('current');
     $(this).addClass('current');
+    console.log('hellow');
   });
 
   $('.route').click(function() {
