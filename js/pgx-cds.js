@@ -41,10 +41,10 @@ var main = function() {
     // $('.medication:last').clone(true).appendTo('.cpoe:last');
     $(this).parent().append('<p>Select medication</p>');
     $(this).hide();
-    $(this).parent().children('.remove').show();
+    $(this).parent().children('.submit').show();
   });
 
-  $('.remove').click(function() {
+  $('.submit').click(function() {
     $(this).parent().parent().hide();
   });
 
