@@ -1,0 +1,44 @@
+body {
+  font-family: OpenSans;
+  background-color: #c0e6f3;
+}
+
+.jumbo {
+  position: fixed;
+  top: 5%;
+  left: 10%;
+  width: 80%;
+  text-align: center;
+}
+
+.gif-container {
+  position: fixed;
+  top: 30%;
+  left: 10%;
+  height: 60%;
+  width: 50%;
+  background: url(/img/syncpic.png) no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.desc-container {
+  position: fixed;
+  top: 30%;
+  right: 10%;
+  height: 60%;
+  width: 20%;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 2em;
+  font-size: 1.3em;
+}
+
+.desc-container .btn {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h1 {
+  font-family: Hind;
+}
