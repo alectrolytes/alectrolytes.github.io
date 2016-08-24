@@ -1,4 +1,20 @@
 [{
+	"name": "Nash",
+	"challenge": "Be a vegetarian for a week!",
+	"proof": "not completed yet"
+},{
+	"name": "Willian",
+	"challenge": "Build a website using Firebase backend services!",
+	"proof": "not completed yet"
+},{
+	"name": "David",
+	"challenge": "Create a better mobile experience for users on your site!",
+	"proof": "not completed yet"
+},{
+	"name": "Oddy",
+	"challenge": "Get to Top 10 of my region's PR!",
+	"proof": "not completed yet"
+},{
 	"name": "Steven",
 	"challenge": "Visit all 50 states!",
 	"proof": "not completed yet"

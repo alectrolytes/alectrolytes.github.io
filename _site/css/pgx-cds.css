@@ -1,0 +1,240 @@
+.overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(255,255,255,.8);
+  overflow: auto;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+}
+
+.content {
+  top: 4.8em;
+  height: calc(100% - 4.8em);
+  width: 100%;
+  position: fixed;
+}
+
+.title {
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.cpoe {
+  width: 80%;
+  position: fixed;
+  top: 25%;
+  left: 10%;
+  overflow: auto;
+}
+
+.medication {
+  width: 100%;
+  float: left;
+}
+
+.current-details {
+  border-style: solid;
+  border-color: #00CC99;
+  border-width: medium;
+}
+
+.details {
+  height: 5em;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.details button {
+  position: relative;
+  float: left;
+  top: 50%;
+  /*transform: translate(0,-50%);*/
+  margin: 0 1em;
+}
+
+.details .submit {
+  display: none;
+}
+
+.details p {
+  float: left;
+  font-size: 2em;
+  position: relative;
+  top: 50%;
+  transform: translate(0,-50%);
+}
+
+.order {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  height: 20em;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0, 204, 153, 0.3);
+}
+
+.order li {
+  display: inline-block;
+}
+
+.med-list {
+  height: 100%;
+  width: 40%;
+}
+
+.strength-list {
+  height: 100%;
+  width: 20%;
+}
+
+.route-list {
+  height: 100%;
+  width: 20%;
+}
+
+.frequency-list {
+  height: 100%;
+  width: 20%;
+}
+
+td {
+  height: 4em;
+  width: 100%;
+}
+
+.med p {
+  font-size: 1.4em;
+}
+
+.strength p {
+  font-size: 1.4em;
+}
+
+.route p {
+  font-size: 1.4em;
+}
+
+.frequency p {
+  font-size: 1.4em;
+}
+
+.current {
+  background-color: #00CC99;
+}
+
+.report {
+  height: 4em;
+  width: 100%;
+  background-color: rgba(255, 255, 0, 0.5);
+}
+
+.report p {
+  position: relative;
+  width: 80%;
+  float: left;
+  top: 50%;
+  transform: translate(0,-50%);
+  margin: 0 1em;
+}
+
+.info-btn {
+  position: relative;
+  float: right;
+  top: 50%;
+  transform: translate(0,-50%);
+  margin: 0 1em;
+}
+
+.black_overlay{
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index:1001;
+  -moz-opacity: 0.8;
+  opacity:.80;
+  filter: alpha(opacity=80);
+}
+
+.white_content {
+  display: none;
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  padding: 32px;
+  border: 16px solid #00CC99;
+  background-color: white;
+  z-index:1002;
+  overflow: auto;
+}
+
+#more-info {
+  text-align: center;
+}
+
+#more-info h1 {
+  margin: 0;
+  font-size: 4vh;
+}
+
+#more-info h3 {
+  margin: 1%
+  font-size: 3vh;
+}
+
+#case p {
+  font-size: 1.2vw;
+}
+
+#description {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  height: 40%;
+  width: 35%;
+  text-align: left;
+  font-size: 1.8vh;
+}
+
+#support {
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  height: 40%;
+  width: 35%;
+  text-align: left;
+  font-size: 1.8vh;
+}
+
+#close-btn {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+}
+
+#begin-btn {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+}
+
+td p {
+  float: left;
+}
+
+table, th, td {
+  border: 1px solid #00CC99 !important;
+  border-collapse: collapse;
+}
