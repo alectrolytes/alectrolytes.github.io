@@ -126,7 +126,7 @@ function generateCitation() {
         author_count++;
         if (author_count === article.authors.length) {
           name_nlm = name_nlm.concat('. ')
-        } else if (article.authors[name].authtype != 'CollectiveName') {
+        } else if (article.authors[name].authtype == 'CollectiveName') {
           name_nlm = name_nlm.concat('; ')
         } else {
           name_nlm = name_nlm.concat(', ')
