@@ -130,7 +130,7 @@ function generateCitation() {
         author_count++;
         if (author_count === article.authors.length) {
           name_nlm = name_nlm.concat('. ')
-        } else if (author_count < article.authors.length) {
+        } else if (author_count < article.authors.length && artice.authors[name+1].authtype != 'CollectiveName') {
           name_nlm = name_nlm.concat(', ')
         }
       }
