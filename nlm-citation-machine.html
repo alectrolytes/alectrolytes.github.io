@@ -117,6 +117,7 @@ function generateCitation() {
       // arrange author names
       var author_count = 0;
       var name_nlm = "";
+      var next_author;
       for (name in article.authors) {
         if (article.authors[name].authtype == 'CollectiveName') {
           name_nlm = name_nlm.concat('; ')
@@ -128,9 +129,10 @@ function generateCitation() {
         // //   name_nlm = name_nlm.concat('et al');
         // // }
         author_count++;
+        next_author = author_count + 1;
         if (author_count === article.authors.length) {
           name_nlm = name_nlm.concat('. ')
-        } else if (author_count < article.authors.length && artice.authors[name+1].authtype != 'CollectiveName') {
+        } else if (author_count < article.authors.length && artice.authors[next_author].authtype != 'CollectiveName') {
           name_nlm = name_nlm.concat(', ')
         }
       }
