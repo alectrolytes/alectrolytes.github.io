@@ -133,7 +133,7 @@ function generateCitation() {
           name_nlm = name_nlm.concat('. ')
         } else if (author_count < article.authors.length && article.authors[name].authtype != 'CollectiveName') {
           name_nlm = name_nlm.concat(', ')
-          console.log(name_nlm = name_nlm.concat(article.authors[name].name)
+          console.log(name_nlm = name_nlm.concat(article.authors[name].name))
         }
       }
       // generate NLM article citation depending if volume and issue are variables
