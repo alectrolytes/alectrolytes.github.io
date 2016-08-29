@@ -129,10 +129,9 @@ function generateCitation() {
         // //   name_nlm = name_nlm.concat('et al');
         // // }
         author_count++;
-        next_author = author_count + 1;
         if (author_count === article.authors.length) {
           name_nlm = name_nlm.concat('. ')
-        } else if (author_count < article.authors.length && article.authors[next_author].authtype != 'CollectiveName') {
+        } else if (author_count < article.authors.length && article.authors[name].authtype != 'CollectiveName') {
           name_nlm = name_nlm.concat(', ')
         }
       }
