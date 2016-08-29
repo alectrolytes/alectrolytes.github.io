@@ -121,9 +121,9 @@ function generateCitation() {
       for (name in article.authors) {
         if (article.authors[name].authtype == 'CollectiveName') {
           name_nlm = name_nlm.concat('; ')
-          name_nlm = name_nlm.concat(article.authors[name].name);
+          name_nlm = name_nlm.concat(article.authors[name].name)
         } else {
-          name_nlm = name_nlm.concat(article.authors[name].name);
+          name_nlm = name_nlm.concat(article.authors[name].name)
         }
         // } else if(author_count === 4){
         // //   name_nlm = name_nlm.concat('et al');
@@ -132,7 +132,7 @@ function generateCitation() {
         next_author = author_count + 1;
         if (author_count === article.authors.length) {
           name_nlm = name_nlm.concat('. ')
-        } else if (author_count < article.authors.length && artice.authors[next_author].authtype != 'CollectiveName') {
+        } else if (author_count < article.authors.length && article.authors[next_author].authtype != 'CollectiveName') {
           name_nlm = name_nlm.concat(', ')
         }
       }
