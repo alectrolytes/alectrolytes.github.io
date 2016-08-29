@@ -119,19 +119,16 @@ function generateCitation() {
       var name_nlm = "";
       var next_author;
       for (name in article.authors) {
-        if (article.authors[name].authtype == 'CollectiveName') {
-          name_nlm = name_nlm.concat('; ')
-          name_nlm = name_nlm.concat(article.authors[name].name)
-        } else {
-          name_nlm = name_nlm.concat(article.authors[name].name)
-        }
+        name_nlm = name_nlm.concat(article.authors[name].name)
         // } else if(author_count === 4){
         // //   name_nlm = name_nlm.concat('et al');
         // // }
         author_count++;
         if (author_count === article.authors.length) {
           name_nlm = name_nlm.concat('. ')
-        } else if (author_count < article.authors.length && article.authors[name].authtype != 'CollectiveName') {
+        } else if (article.authors[name].authtype != 'CollectiveName') {
+          name_nlm = name_nlm.concat('; ')
+        } else {
           name_nlm = name_nlm.concat(', ')
         }
       }
