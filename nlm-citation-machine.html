@@ -118,8 +118,12 @@ function generateCitation() {
       var author_count = 0;
       var name_nlm = "";
       for (name in article.authors) {
-        // if (author_count < 3) {
+        if (article.authors[name].authtype == 'CollectiveName') {
+          name_nlm = name_nlm.concat('; ')
           name_nlm = name_nlm.concat(article.authors[name].name);
+        } else {
+          name_nlm = name_nlm.concat(article.authors[name].name);
+        }
         // } else if(author_count === 4){
         // //   name_nlm = name_nlm.concat('et al');
         // // }
