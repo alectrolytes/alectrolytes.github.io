@@ -124,6 +124,7 @@ function generateCitation() {
         // //   name_nlm = name_nlm.concat('et al');
         // // }
         author_count++;
+        console.log(name)
         if (author_count === article.authors.length) {
           name_nlm = name_nlm.concat('. ')
         } else if (article.authors[name].authtype == 'CollectiveName') {
