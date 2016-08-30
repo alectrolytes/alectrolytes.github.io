@@ -27,6 +27,10 @@ body {
   z-index: 0;
 }
 
+#page1 .container h1 {
+  color: #FFFFFF;
+}
+
 #page2 {
   height: 75vh;
   width: 100vw;
