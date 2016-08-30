@@ -21,14 +21,10 @@ body {
   width: 60%;
   top: 20%;
   left: 20%;
-  color: #FFFFFF;
+  color: #00CC99;
   font-family: Mentone;
   font-size: 0.8vw;
   z-index: 0;
-}
-
-#page1 .container h1 {
-  color: #FFFFFF;
 }
 
 #page2 {
