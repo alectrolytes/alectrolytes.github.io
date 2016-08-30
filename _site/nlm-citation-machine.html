@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- references -->
+  <link rel="stylesheet" href="/css/normalize.css"/>
   <link rel="stylesheet" href="/css/bootstrap.css"/>
   <link rel="stylesheet" type="text/css" href="/css/main.css"/>
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -187,16 +188,18 @@ function generateCitation() {
       // arrange author names
       var author_count = 0;
       var name_nlm = "";
+      var next_author;
       for (name in article.authors) {
-        // if (author_count < 3) {
-          name_nlm = name_nlm.concat(article.authors[name].name);
+        name_nlm = name_nlm.concat(article.authors[name].name)
         // } else if(author_count === 4){
         // //   name_nlm = name_nlm.concat('et al');
         // // }
         author_count++;
         if (author_count === article.authors.length) {
           name_nlm = name_nlm.concat('. ')
-        } else if (author_count < article.authors.length) {
+        } else if (article.authors[author_count].authtype == 'CollectiveName') {
+          name_nlm = name_nlm.concat('; ')
+        } else {
           name_nlm = name_nlm.concat(', ')
         }
       }

@@ -68,17 +68,16 @@ body {
 }
 
 #page3 .container {
-  padding: 1em;
   width: 80%;
 }
 
-#page3 .container p {
-  font-size: 1.5vw;
+#page3 .container h1 {
+  margin-bottom: 0;
+  text-align: center;
 }
 
 .main {
   position: relative;
-  top: 0%;
   width: 90%;
   margin: 0 auto;
   font-size: 1.5vmin;
