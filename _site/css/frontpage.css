@@ -89,6 +89,9 @@ body {
 
 .project {
   height: 25vh;
+  width: 25vw;
+  overflow: hidden;
+  box-sizing: content-box;
 }
 
 .view {
