@@ -90,6 +90,7 @@ body {
 .project {
   height: 30vh;
   width: 45vh;
+  overflow: hidden;
 }
 
 .view {
