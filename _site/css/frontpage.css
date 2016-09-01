@@ -72,7 +72,6 @@ body {
 }
 
 #page3 .container h1 {
-  margin-bottom: 0;
   text-align: center;
 }
 
@@ -84,25 +83,22 @@ body {
 }
 
 .main .row {
-  margin: 2% 0;
+  height: 25vh;
+  margin: 20px 0;
 }
 
 .project {
-  height: 30vh;
-  width: 45vh;
+  height: 100%;
+  /*width: 42vh;*/
+  padding: 0 10px;
+  overflow: hidden;
 }
 
-.view {
-  height: 100% !important;
-  width: 100% !important;
+.project img {
+  width: 100%;
 }
 
-.view img {
-  min-width: 100%;
-  min-height: 100%;
-}
-
-.content p{
+.content p {
   font-size: 2vh;
 }
 
