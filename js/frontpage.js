@@ -2,6 +2,8 @@ $(document).ready(function() {
   $('.project').hover(function() {
     $('.content').fadeIn(500);
   });
+
+  //smooth scrolling
   var $root = $('html, body');
   $('a').click(function() {
     $root.animate({
@@ -9,5 +11,4 @@ $(document).ready(function() {
     }, 500);
     return false;
   });
-  $('img').on('dragstart', function(){return false;});
 });
