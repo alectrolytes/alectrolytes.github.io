@@ -152,3 +152,10 @@ li {
 a {
   color: #00B386;
 }
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -10vh;
+    visibility: hidden;
+}
