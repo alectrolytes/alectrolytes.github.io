@@ -19,12 +19,24 @@ body {
   padding: 1.5em;
   position: absolute;
   width: 60%;
-  top: 20%;
+  top: 15%;
   left: 20%;
   color: #00CC99;
   font-family: Mentone;
   font-size: 0.8vw;
   z-index: 0;
+}
+
+#page1 .container h1 {
+  font-family: Mentone;
+  font-size: 5vw;
+  text-align: center;
+}
+
+#page1 .container p {
+  font-size: 1.5vw;
+  font-family: Museo300;
+  text-align: center;
 }
 
 #page2 {
