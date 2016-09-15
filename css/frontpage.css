@@ -105,7 +105,7 @@ body {
 }
 
 .content p {
-  font-size: 2vh;
+  font-size: 2vw;
 }
 
 .info {
@@ -126,7 +126,7 @@ body {
 
 .container h1 {
   margin-bottom: 0.5em;
-  font-size: 5vh;
+  font-size: 4vw;
   font-family: Mentone;
   color: #00CC99;
 }
