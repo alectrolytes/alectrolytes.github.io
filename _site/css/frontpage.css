@@ -40,7 +40,7 @@ body {
 }
 
 #page2 {
-  height: 75vh;
+  height: 70vh;
   width: 100vw;
   background-color: rgba(255, 255, 255, 1);
 }
@@ -64,7 +64,7 @@ body {
   float: right;
   height: 100%;
   width: 60%;
-  padding: 4% 10% 4% 0;
+  padding: 3% 10% 3% 0;
 }
 
 #page2 p {
