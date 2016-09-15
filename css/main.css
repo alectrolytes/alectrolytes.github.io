@@ -9,6 +9,9 @@ body {
   width: 100%;
   position: fixed;
   background-color: #00CC99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar {
@@ -36,7 +39,6 @@ body {
   position: relative;
   text-align: center;
   padding: .5em;
-  margin: .5em;
 }
 
 .box span {
