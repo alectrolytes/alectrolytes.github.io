@@ -29,7 +29,7 @@ body {
 
 #page1 .container h1 {
   font-family: Mentone;
-  font-size: 5vw;
+  font-size: 4vw;
   text-align: center;
 }
 
@@ -136,7 +136,7 @@ body {
 
 .container h1 {
   margin-bottom: 0.5em;
-  font-size: 4vw;
+  font-size: 3vw;
   font-family: Mentone;
   color: #00CC99;
 }
