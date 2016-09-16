@@ -1,7 +1,4 @@
 $(document).ready(function() {
-  $('.project').hover(function() {
-    $('.content').fadeIn(500);
-  });
 
   //smooth scrolling
   var $root = $('html, body');

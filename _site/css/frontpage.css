@@ -73,45 +73,45 @@ body {
 
 #page3 {
   background-color: #F5F5F5;
-  height: 75vh;
+  height: 70vh;
   width: 100%;
-}
-
-#page3 .container {
-  width: 80%;
-}
-
-#page3 .container h1 {
-  text-align: center;
 }
 
 .main {
   position: relative;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   font-size: 1.5vmin;
 }
 
 .main .row {
-  height: 25vh;
-  margin: 20px 0;
+  height: 28vh;
 }
 
 .project {
   height: 100%;
-  padding: 0 10px !important;
+  padding: 15px !important;
   overflow: hidden;
+  position: relative;
 }
 
 .project img {
-  z-index: -100;
-  width: 100%;
+  position: absolute;
   height: 100%;
+  width: 100%;
 }
 
 .content {
+  position: absolute;
   z-index: 1;
+  visibility: hidden;
+  height: 100%;
   background-color: rgba(245, 245, 245, 0.5);
+  box-sizing: border-box;
+}
+
+.content:hover {
+  visibility: visible;
 }
 
 .content p {
@@ -119,7 +119,7 @@ body {
 }
 
 .info {
-  font-family: Museo300;
+  font-size: 1.5vw;
 }
 
 #page4 {
@@ -134,8 +134,7 @@ body {
   float: right;
 }
 
-.container h1 {
-  margin-bottom: 0.5em;
+h1 {
   font-size: 3vw;
   font-family: Mentone;
   color: #00CC99;
