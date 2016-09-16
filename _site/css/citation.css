@@ -54,7 +54,7 @@ body {
 
 #generate-btn {
   color: white;
-  background-color: #00CC99;
+  background-color: #20a588;
   border: none;
   position: relative;
   top: 25%;
@@ -72,7 +72,7 @@ body {
 }
 
 h2 {
-  color: #00CC99;
+  color: #20a588;
   margin-left: auto;
   margin-right:auto;
   font-size: 2vw;

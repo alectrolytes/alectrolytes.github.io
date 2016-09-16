@@ -37,7 +37,7 @@
 
 .current-details {
   border-style: solid;
-  border-color: #00CC99;
+  border-color: #20a588;
   border-width: medium;
 }
 
@@ -126,7 +126,7 @@ td {
 }
 
 .current {
-  background-color: #00CC99;
+  background-color: #20a588;
 }
 
 .report {
@@ -174,7 +174,7 @@ td {
   width: 50%;
   height: 50%;
   padding: 32px;
-  border: 16px solid #00CC99;
+  border: 16px solid #20a588;
   background-color: white;
   z-index:1002;
   overflow: auto;
@@ -235,6 +235,6 @@ td p {
 }
 
 table, th, td {
-  border: 1px solid #00CC99 !important;
+  border: 1px solid #20a588 !important;
   border-collapse: collapse;
 }
