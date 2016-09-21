@@ -9,6 +9,10 @@ body {
   width: 100%;
   position: fixed;
   background-color: #20a588;
+  background: -webkit-linear-gradient(left top, #00CC99, #20a588); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #00CC99, #20a588); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #00CC99, #20a588); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #00CC99, #20a588); /* Standard syntax */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,6 +24,7 @@ body {
   font-size: 1.3em;
   font-weight: bold;
   font-family: RobotoLight;
+  text-shadow: 1px 1px 1px #00000;
   color: #FFFFFF;
   position: absolute;
   text-align: center;
