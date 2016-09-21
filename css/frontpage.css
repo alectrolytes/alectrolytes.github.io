@@ -1,4 +1,5 @@
 body {
+  overflow-x:hidden;
 }
 
 #page1 {
@@ -73,7 +74,7 @@ body {
 
 #page3 {
   background-color: #F5F5F5;
-  height: 80vh;
+  height: 85vh;
   width: 100%;
 }
 
