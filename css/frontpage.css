@@ -79,7 +79,7 @@ body {
 
 .main {
   position: relative;
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   font-size: 1.5vmin;
 }
@@ -90,7 +90,7 @@ body {
 
 .project {
   height: 100%;
-  padding: 15px !important;
+  padding: 20px !important;
   overflow: hidden;
   position: relative;
 }
