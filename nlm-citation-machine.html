@@ -111,7 +111,7 @@ function generateCitation() {
       var citation = name_nlm +  book.title + '. ' + book.publisher + '; ' + book.publishedDate + '. ' + book.pageCount + ' p.';
     } else { // PubMed citation
       // parse JSON into js object
-      var json_obj = JSON.parse(Get('http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&retmode=json&rettype=abstract&id=' + search));
+      var json_obj = JSON.parse(Get('https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&retmode=json&rettype=abstract&id=' + search));
       // isolate nested article object
       var article = json_obj.result[search];
       // arrange author names
