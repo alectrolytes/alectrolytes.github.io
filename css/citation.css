@@ -7,7 +7,7 @@ body {
 .overlay {
   height: 100%;
   width: 100%;
-  background: rgba(240,240,240,.9);
+  background: rgba(240,240,240,.95);
   overflow: auto;
   top: 0px;
   left: 0px;
