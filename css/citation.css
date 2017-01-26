@@ -7,7 +7,7 @@ body {
 .overlay {
   height: 100%;
   width: 100%;
-  background: rgba(255,255,255,.8);
+  background: rgba(240,240,240,.9);
   overflow: auto;
   top: 0px;
   left: 0px;
@@ -23,7 +23,6 @@ body {
 #citation-container {
   height: 60%;
   width: 60%;
-  background: rgba(0,0,0,0.9);
   position: fixed;
   top: 50%;
   left: 50%;
@@ -80,12 +79,12 @@ h2 {
 
 p {
   font-size: 1.2vw;
-  color: white;
+  color: black;
 }
 
 li {
   font-size: 1vw;
-  color: white;
+  color: black;
 }
 
 a {
