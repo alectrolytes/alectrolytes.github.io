@@ -110,6 +110,7 @@ body {
   height: 100%;
   background-color: rgba(245, 245, 245, 0.5);
   box-sizing: border-box;
+  padding: 10%;
 }
 
 .content:hover {
