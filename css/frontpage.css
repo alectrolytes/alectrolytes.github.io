@@ -126,7 +126,7 @@ body {
 }
 
 .content a {
-  text-align: center;
+  display: block;
   margin: 0 auto;
 }
 
