@@ -125,6 +125,10 @@ body {
   font-size: 2vw;
 }
 
+.content a {
+  margin: 0 auto;
+}
+
 .info {
   font-size: 1.5vw;
 }
