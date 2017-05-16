@@ -126,6 +126,7 @@ body {
 }
 
 .content a {
+  text-align: center;
   margin: 0 auto;
 }
 
