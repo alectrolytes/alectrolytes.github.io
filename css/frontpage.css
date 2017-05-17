@@ -108,7 +108,7 @@ body {
   z-index: 1;
   opacity: 0;
   height: 100%;
-  background-color: rgba(245, 245, 245, 0.8);
+  background-color: rgba(245, 245, 245, 0.85);
   box-sizing: border-box;
   padding: 10%;
 }
@@ -125,9 +125,73 @@ body {
   font-size: 2vw;
 }
 
-.content a {
-  display: block;
+.more-box {
+  display: inline-block;
+  position: relative;
+  text-align: center;
   margin: 0 auto;
+  padding: .5em;
+  font-size: 1.4vw;
+  color: #20a588;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.more-box span {
+  position: absolute;
+  background: none;
+  -moz-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.more-box span.top {
+  width: 100%;
+  height: 2px;
+  top: 0;
+  left: -140%;
+}
+
+.more-box:hover span.top {
+  left: 0;
+  background: #20a588;
+}
+
+.more-box span.right {
+  height: 100%;
+  width: 2px;
+  right: 0;
+  top: -140%;
+}
+
+.more-box:hover span.right {
+  top: 0;
+  background: #20a588;
+}
+
+.more-box span.bottom {
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  right: -140%;
+}
+
+.more-box:hover span.bottom {
+  right: 0;
+  background: #20a588;
+}
+
+.more-box span.left {
+  height: 100%;
+  width: 2px;
+  left: 0;
+  bottom: -140%;
+}
+
+.more-box:hover span.left {
+  bottom: 0;
+  background: #20a588;
 }
 
 .info {
