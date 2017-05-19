@@ -54,7 +54,8 @@ body {
 #generate-btn {
   color: white;
   background-color: #20a588;
-  border: none;
+  border-color: #1d957a
+  border-radius: 0;
   position: relative;
   top: 25%;
   margin: auto;
