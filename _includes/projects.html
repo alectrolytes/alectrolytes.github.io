@@ -58,7 +58,7 @@
           <span class="right"></span>
           <span class="bottom"></span>
           <span class="left"></span>
-            <a class="boxlink" style="color:transparent" href="javascript:(function()%7Bjavascript%3A%20(function()%20%7Bvar%20pubmedURL%20%3D%20location.href%3Bvar%20usciURL%20%3D%20pubmedURL.replace('www.ncbi.nlm.nih.gov'%2C%20'www-ncbi-nlm-nih-gov.db.usciences.edu')%3Bthis.document.location.href%20%3D%20usciURL%3B%7D)()%7D)()">USci PubMed</a>
+            <a class="boxlink" style="color:transparent" href="javascript:(function()%7Bjavascript%3A%20(function()%20%7Bvar%20currentURL%20%3D%20location.href%3Bvar%20usciURL%3Bif(currentURL.includes('www.ncbi.nlm.nih.gov%2Fpubmed'))%7BusciURL%20%3D%20currentURL.replace('www.ncbi.nlm.nih.gov%2Fpubmed'%2C%20'login.db.usciences.edu%2Flogin%3Furl%3Dhttps%3A%2F%2Fwww-ncbi-nlm-nih-gov.db.usciences.edu%2Fpubmed')%3BusciURL%20%3D%20usciURL.concat('%3Fmyncbishare%3Dusiplib')%3B%7D%20else%20if%20(currentURL.includes('www-ncbi-nlm-nih-gov.db.usciences.edu'))%20%7BusciURL%20%3D%20currentURL.concat('%3Fmyncbishare%3Dusiplib')%3B%7D%20else%20%7BusciURL%20%3D%20'https%3A%2F%2Fdb.usciences.edu%2Flogin%3Furl%3Dhttps%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fentrez%2Fquery.fcgi%3Fmyncbishare%3Dusiplib'%3B%7Dthis.document.location.href%20%3D%20usciURL%3B%7D)()%7D)()">USci PubMed</a>
         </div>
       </div>
     </div>
