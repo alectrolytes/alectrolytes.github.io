@@ -95,12 +95,17 @@ body {
   padding: 5px !important;
   overflow: hidden;
   position: relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
 .project img {
   position: absolute;
-  height: 100%;
-  width: 100%;
+  display: block;
+  height: 95%;
+  width: 95%;
+  margin: auto;
 }
 
 .content {
