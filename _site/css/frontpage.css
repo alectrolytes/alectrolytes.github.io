@@ -102,8 +102,10 @@ body {
 
 .project img {
   position: absolute;
+  display: block;
   height: 95%;
   width: 95%;
+  margin: auto;
 }
 
 .content {
