@@ -78,21 +78,21 @@ var main = function() {
        populateStrengthTable($('#strength-table'), acetaminophen.strength);
        populateRouteTable($('#route-table'), acetaminophen.route);
        populateFrequencyTable($('#frequency-table'), acetaminophen.frequency);
-+    } else if ($(this).is('#codeine')) {
-+      populateStrengthTable($('#strength-table'), codeine.strength);
-+      populateRouteTable($('#route-table'), codeine.route);
-+      populateFrequencyTable($('#frequency-table'), codeine.frequency);
-+    } else if ($(this).is('#fentanyl')) {
-+      populateStrengthTable($('#strength-table'), fentanyl.strength);
-+      populateRouteTable($('#route-table'), fentanyl.route);
-+      populateFrequencyTable($('#frequency-table'), fentanyl.frequency);
-+    } else if ($(this).is('#morphine')) {
-+      populateStrengthTable($('#strength-table'), morphine.strength);
-+      populateRouteTable($('#route-table'), morphine.route);
-+      populateFrequencyTable($('#frequency-table'), morphine.frequency);
-+    } else if ($(this).is('#tramadol')) {
-+      populateStrengthTable($('#strength-table'), tramadol.strength);
-+      populateRouteTable($('#route-table'), tramadol.route);
-+      populateFrequencyTable($('#frequency-table'), tramadol.frequency);
+    } else if ($(this).is('#codeine')) {
+        populateStrengthTable($('#strength-table'), codeine.strength);
+        populateRouteTable($('#route-table'), codeine.route);
+        populateFrequencyTable($('#frequency-table'), codeine.frequency);
+    } else if ($(this).is('#fentanyl')) {
+        populateStrengthTable($('#strength-table'), fentanyl.strength);
+        populateRouteTable($('#route-table'), fentanyl.route);
+        populateFrequencyTable($('#frequency-table'), fentanyl.frequency);
+    } else if ($(this).is('#morphine')) {
+        populateStrengthTable($('#strength-table'), morphine.strength);
+        populateRouteTable($('#route-table'), morphine.route);
+        populateFrequencyTable($('#frequency-table'), morphine.frequency);
+    } else if ($(this).is('#tramadol')) {
+        populateStrengthTable($('#strength-table'), tramadol.strength);
+        populateRouteTable($('#route-table'), tramadol.route);
+        populateFrequencyTable($('#frequency-table'), tramadol.frequency);
      }
    });
