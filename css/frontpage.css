@@ -1,6 +1,7 @@
 body {
   margin: 0;
   width: 100%;
+  overflow-x: hidden;
 }
 
 #page1 {
@@ -74,9 +75,9 @@ body {
 }
 
 #page3 {
-  background-color: #F5F5F5;
   height: 85vh;
   width: 100%;
+  background-color: #F5F5F5;
 }
 
 .main {
