@@ -21,13 +21,6 @@ body {
    position: fixed;
 }
 
-#search-form {
-  position: fixed;
-  top: 40%;
-  width: 80%;
-  margin: auto;
-}
-
 .title {
   color: #20a588;
   position: fixed;
@@ -35,6 +28,23 @@ body {
   left: 50%;
   transform: translate(-50%,-50%);
   font-size: 4vw;
+}
+
+#search-form {
+  position: fixed;
+  top: 40%;
+  width: 80%;
+  margin: auto;
+}
+
+.article-list {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50%;
+  width: 60%;
+  overflow: scroll;
 }
 
 p {
