@@ -44,113 +44,13 @@ title: Team Nexus - PubMed Popularity Search
   <span class="g-plusone" data-size="medium" data-annotation="bubble"></span>
 </div>
 
-<!-- citation form -->
-<div id="citation-container">
-  <div id="nlm-description">
-    <h2>NLM Citation Machine</h2>
-    <p>Generate NLM style citations for articles in <a href="http://www.ncbi.nlm.nih.gov/pubmed">PubMed</a> and books in <a href="https://books.google.com">Google Books</a>.</p>
-    <p>Enter PubMed ID or ISBN. Click generate. Simple.</p>
-    <p>Useful references:</p>
-    <ul>
-      <li>DiPiro: 0071800549</li>
-      <li>CHEST: 22315268</li>
-      <li>ACC/AHA Cholesterol: 24239923</li>
-      <li>NLA Dyslipidemia Part 1: 25911072</li>
-      <li>Beer's Criteria: 26446832</li>
-    </ul>
-    <p>Recommendations for the website? Email me at: <a href="mailto:alec@teamnex.us">alec@teamnex.us</a></p>
+<!-- PubMed Popularity Search -->
+<h1>PubMed Popularity Search</h1>
+<form id="citation-form">
+  <div class="form-group">
+    <input type="text" id="query" class="form-control" placeholder="Enter PubMed ID or ISBN here:">
   </div>
-  <form id="citation-form">
-    <div class="form-group">
-      <input type="text" id="query" class="form-control" placeholder="Enter PubMed ID or ISBN here:">
-    </div>
-    <button type="button" id="generate-btn" class="btn" onclick="generateCitation()">Generate!</button>
-    <textarea readonly id="citation" rows="5"></textarea>
-  </form>
-</div>
-
+  <button type="button" id="generate-btn" class="btn" onclick="searchPubMed()">Search!</button>
+</form>
 <script>
-$('#citation-form').submit(function() {
-  generateCitation();
-  return false;
-})
-
-function Get(yourUrl){
-  var Httpreq = new XMLHttpRequest();
-  Httpreq.open("GET",yourUrl,false);
-  Httpreq.send(null);
-  return Httpreq.responseText;
-}
-
-function generateCitation() {
-  var search = document.getElementById('query').value;
-
-  // determines if input is ISBN or PubMedID
-  if (Number.isInteger(parseInt(search))) { // ISBN citation
-    var search_length = search.length;
-    if (search_length === 10 || search_length === 13) {
-      // parse JSON into js object
-      var json_obj = JSON.parse(Get('https://www.googleapis.com/books/v1/volumes?q=isbn:' + search));
-      // isolate nested book object
-      var book = json_obj.items[0].volumeInfo;
-      // arrange author names
-      var author_count = 0;
-      var name_nlm = "";
-      for (name in book.authors) {
-        var name_array = book.authors[name].split(" ");
-        // if (author_count < 3) {
-          name_nlm = name_nlm.concat(name_array[name_array.length - 1] + ' ' + name_array[0].charAt(0));
-        // } else if(author_count === 4){
-        //   name_nlm = name_nlm.concat('et al');
-        // }
-        author_count++;
-        if (author_count === book.authors.length) {
-          name_nlm = name_nlm.concat('. ')
-        } else if (author_count < book.authors.length) {
-          name_nlm = name_nlm.concat(', ')
-        }
-      }
-      // generate NLM book citation
-      var citation = name_nlm +  book.title + '. ' + book.publisher + '; ' + book.publishedDate + '. ' + book.pageCount + ' p.';
-    } else { // PubMed citation
-      // parse JSON into js object
-      var json_obj = JSON.parse(Get('https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&retmode=json&rettype=abstract&id=' + search));
-      // isolate nested article object
-      var article = json_obj.result[search];
-      // arrange author names
-      var author_count = 0;
-      var name_nlm = "";
-      var next_author;
-      for (name in article.authors) {
-        name_nlm = name_nlm.concat(article.authors[name].name);
-        if (article.authors[author_count].authtype === 'CollectiveName' && author_count+1 === article.authors.length) {
-          name_nlm = name_nlm.concat(' ')
-        } else if (article.authors[author_count].authtype !== 'CollectiveName' && author_count+1 === article.authors.length) {
-          name_nlm = name_nlm.concat('. ')
-        } else if (article.authors[author_count+1].authtype === 'CollectiveName') {
-          name_nlm = name_nlm.concat('; ')
-        } else {
-          name_nlm = name_nlm.concat(', ')
-        }
-        author_count++;
-      }
-      // generate NLM article citation depending if volume and issue are variables
-      var citation = name_nlm + article.title + ' ' + article.source + '. ' + article.pubdate;
-      if (article.volume !== '') {
-        citation += ';' + article.volume;
-      }
-      if (article.issue != '') {
-        citation += '(' + article.issue + ')';
-      }
-      if (article.pages != '') {
-        citation += ':' + article.pages;
-      }
-      citation += '.';
-    }
-  }
-
-  // print citation
-  // console.log(citation);
-  document.getElementById('citation').value = citation;
-}
 </script>
