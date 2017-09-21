@@ -15,9 +15,9 @@ body {
 }
 
 .social {
-   top: 2%;
+   top: 11%;
    left: 2%;
-   position: relative;
+   position: fixed;
 }
 
 #citation-container {

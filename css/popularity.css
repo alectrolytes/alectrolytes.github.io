@@ -15,9 +15,9 @@ body {
 }
 
 .social {
-   top: 6em;
-   left: 1%;
-   position: absolute;
+   top: 11%;
+   left: 2%;
+   position: fixed;
 }
 
 .form-group {
