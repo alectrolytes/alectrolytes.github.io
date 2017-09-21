@@ -21,9 +21,9 @@ body {
    position: fixed;
 }
 
-.form-group {
-  position: relative;
-  top: 20%;
+#search-form {
+  position: fixed;
+  top: 40%;
   width: 80%;
   margin: auto;
 }
@@ -31,7 +31,7 @@ body {
 .title {
   color: #20a588;
   position: fixed;
-  top: 10%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%,-50%);
   font-size: 4vw;
