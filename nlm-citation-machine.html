@@ -118,22 +118,21 @@ function generateCitation() {
       // isolate nested article object
       var article = json_obj.result[search];
       // arrange author names
-      var author_count = 0;
+      var author_count = 1;
       var name_nlm = "";
       var next_author;
       for (name in article.authors) {
-        name_nlm = name_nlm.concat(article.authors[name].name)
-        // } else if(author_count === 4){
-        // //   name_nlm = name_nlm.concat('et al');
-        // // }
-        author_count++;
-        if (author_count === article.authors.length && article.authors[author_count-1].authtype !== 'CollectiveName') {
+        name_nlm = name_nlm.concat(article.authors[name].name);
+        if (article.authors[author_count].authtype === 'CollectiveName' && author_count+1 === article.authors.length) {
+          name_nlm = name_nlm.concat(' ')
+        } else if (article.authors[author_count].authtype !== 'CollectiveName' && author_count+1 === article.authors.length) {
           name_nlm = name_nlm.concat('. ')
-        } else if (article.authors[author_count].authtype === 'CollectiveName') {
+        } else if (article.authors[author_count+1].authtype === 'CollectiveName') {
           name_nlm = name_nlm.concat('; ')
         } else {
           name_nlm = name_nlm.concat(', ')
         }
+        author_count++;
       }
       // generate NLM article citation depending if volume and issue are variables
       var citation = name_nlm + article.title + ' ' + article.source + '. ' + article.pubdate;
