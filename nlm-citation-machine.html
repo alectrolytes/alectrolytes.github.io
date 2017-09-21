@@ -118,7 +118,7 @@ function generateCitation() {
       // isolate nested article object
       var article = json_obj.result[search];
       // arrange author names
-      var author_count = 1;
+      var author_count = 0;
       var name_nlm = "";
       var next_author;
       for (name in article.authors) {
