@@ -127,9 +127,9 @@ function generateCitation() {
         // //   name_nlm = name_nlm.concat('et al');
         // // }
         author_count++;
-        if (author_count === article.authors.length) {
+        if (author_count === article.authors.length && article.authors[author_count-1].authtype !== 'CollectiveName') {
           name_nlm = name_nlm.concat('. ')
-        } else if (article.authors[author_count].authtype == 'CollectiveName') {
+        } else if (article.authors[author_count].authtype === 'CollectiveName') {
           name_nlm = name_nlm.concat('; ')
         } else {
           name_nlm = name_nlm.concat(', ')
