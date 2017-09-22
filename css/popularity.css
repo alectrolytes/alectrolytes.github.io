@@ -64,8 +64,6 @@ body {
   height: 18.5%;
   width: auto;
   margin-bottom: 1%;
-  left: 50%;
-  transform: translateX(-50%);
   background-color: #F5FFFA;
   border-radius: 5px;
   border: 2px solid #00CC99;

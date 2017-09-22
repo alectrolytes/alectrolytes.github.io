@@ -92,7 +92,7 @@ title: Team Nexus - PubMed Popularity Search
 
     function SearchPubmed() {
       if($('.article-link').length) {
-        $(".article-link").show("drop", {direction:"up"},600, function(){$(this).remove()});
+        $(".article-link").show("drop", {direction:"up"}, 600, function(){$(this).remove()});
       }
 
       search_terms = encodeURIComponent(document.getElementById('query').value);
@@ -162,7 +162,7 @@ title: Team Nexus - PubMed Popularity Search
         // $(".row").last().append($article_citations);
       }
       $(".article-list").append(append_html);
-      $(".article").show("drop", {direction:"up"},600);
+      $(".article").show("drop", {direction:"up"}, 600);
     }
 
     $('.search-form').keypress(function(event) {
