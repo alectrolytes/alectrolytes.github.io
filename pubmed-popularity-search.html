@@ -109,11 +109,8 @@ title: Team Nexus - PubMed Popularity Search
 
       article_results = ArticleSearch(article_string);
 
-      console.log(article_results);
-
       for (id in id_list) {
         citation_count = article_results.result[id_list[id]].pmcrefcount;
-        console.log(citation_count);
         if (citation_count != ''){
           article_list.push({
             article_id: id_list[id],
