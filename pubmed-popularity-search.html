@@ -73,7 +73,7 @@ title: Team Nexus - PubMed Popularity Search
     }
 
     function PubMedSearch(search_terms){
-      var pubmed_search_results = JSON.parse(Get('https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=json&retmax=100&sort=relevance&term=' + search_terms));
+      var pubmed_search_results = JSON.parse(Get('https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=json&retmax=200&sort=relevance&term=' + search_terms));
       return pubmed_search_results;
     }
 
@@ -124,7 +124,7 @@ title: Team Nexus - PubMed Popularity Search
       }
 
       article_list.sort(compare);
-      article_list.length = 10;
+      article_list.length = 20;
 
       for (article in article_list) {
         append_html += '<a class="article-link" href="https://www.ncbi.nlm.nih.gov/pubmed/' + article_list[article].article_id + '">'
