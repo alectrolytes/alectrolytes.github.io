@@ -7,52 +7,141 @@ title: Team Nexus - PubMed Popularity Search
   <meta name="description" content="Search and sort pubmed articles by popularity."/>
 </head>
 <body>
+  <!-- Facebook Like Script -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
-<!-- Facebook Like Script -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+  <!-- Google +1 Script -->
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
 
-<!-- Google +1 Script -->
-<script src="https://apis.google.com/js/platform.js" async defer></script>
+  <!-- background tint-->
+  <div class="overlay"></div>
 
-<!-- background tint-->
-<div class="overlay"></div>
-
-<!-- awesome zoom box navbar! -->
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div id="projects-btn" class="box">
-      Projects
-      <span class="top"></span>
-      <span class="right"></span>
-      <span class="bottom"></span>
-      <span class="left"></span>
-      <a href="http://teamnex.us/#projects" class="boxlink"></a>
+  <!-- awesome zoom box navbar! -->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div id="projects-btn" class="box">
+        Projects
+        <span class="top"></span>
+        <span class="right"></span>
+        <span class="bottom"></span>
+        <span class="left"></span>
+        <a href="http://teamnex.us/#projects" class="boxlink"></a>
+      </div>
     </div>
+  </nav>
+
+  <!-- Google +1 and Facebook Like buttons -->
+  <div class="social">
+    <span class="fb-like" data-href="http://teamnex.us/nlm-citation-machine" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" style="vertical-align:top !important"></span>
+    <span class="g-plusone" data-size="medium" data-annotation="bubble"></span>
   </div>
-</nav>
 
-<!-- Google +1 and Facebook Like buttons -->
-<div class="social">
-  <span class="fb-like" data-href="http://teamnex.us/nlm-citation-machine" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" style="vertical-align:top !important"></span>
-  <span class="g-plusone" data-size="medium" data-annotation="bubble"></span>
-</div>
+  <!-- PubMed Popularity Search -->
+  <div class="title">PubMed Popularity Search</div>
+  <form class="search-form row" onsubmit="return false;">
+    <div class="form-group col-sm-10">
+      <input type="text" id="query" class="form-control" placeholder="Enter PubMed ID">
+    </div>
+    <div class="col-sm-2">
+      <button type="button" id="search-btn" class="btn" onclick="SearchPubmed()">Search!</button>
+    </div>
+  </form>
+  <div class="article-list">
 
-<!-- PubMed Popularity Search -->
-<div class="title">PubMed Popularity Search</div>
-<form class="search-form">
-  <div class="form-group">
-    <input type="text" id="query" class="form-control" placeholder="Enter PubMed ID or ISBN here:">
-  </div>
-  <button type="button" id="search-btn" class="btn" onclick="searchPubMed()">Search!</button>
-</form>
-<div class="article-list">
+  <script>
+    var search_terms;
+    var article_list;
+    var article_id;
+    var search_results;
+    var id_list;
+    var article_results
 
-<script>
-</script>
+    function Get(yourUrl){
+      var Httpreq = new XMLHttpRequest();
+      Httpreq.open("GET",yourUrl,false);
+      Httpreq.send(null);
+      return Httpreq.responseText;
+    }
+
+    function PubMedSearch(search_terms){
+      var pubmed_search_results = JSON.parse(Get('https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=json&retmax=100&sort=relevance&term=' + search_terms));
+      return pubmed_search_results;
+    }
+
+    function ArticleSearch(pubmed_id){
+      var article_search_results = JSON.parse(Get('https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&retmode=json&rettype=abstract&id=' + pubmed_id));
+      return article_search_results;
+    }
+
+    function compare(a,b) {
+      if (a.article_citations < b.article_citations)
+        return 1;
+      if (a.article_citations > b.article_citations)
+        return -1;
+      return 0;
+    }
+
+    function SearchPubmed() {
+      if($('.article').length) {
+        $(".article").animate({height: 0, opacity: 0}, '600', function(){$(".article").remove()});
+      }
+
+      search_terms = encodeURIComponent(document.getElementById('query').value);
+      article_list = [];
+      search_results = PubMedSearch(search_terms);
+      id_list = search_results.esearchresult.idlist;
+
+      for (id in id_list) {
+        article_id = id_list[id]
+        article_results = ArticleSearch(article_id);
+        citation_count = article_results.result[article_id].pmcrefcount;
+        if (citation_count != ''){
+          article_list.push({
+            article_id: article_id,
+            article_citations: citation_count,
+            article_title: article_results.result[article_id].title,
+            article_author: article_results.result[article_id].sortfirstauthor,
+            aritcle_journal: article_results.result[article_id].fulljournalname,
+            article_pubdate: article_results.result[article_id].pubdate
+          });
+        }
+      }
+      article_list.sort(compare);
+      article_list.length = 10;
+
+      for (article in article_list) {
+        $article = $("<div>").addClass("article container-fluid").css('display', 'none');
+        $article_title = $("<div>").addClass("article-title").text(article_list[article].article_title);
+        $article_id = $("<div>").addClass("article-id col-sm").text(article_list[article].article_id);
+        $article_author = $("<div>").addClass("article-author col-sm-2").text(article_list[article].article_author);
+        $article_journal = $("<div>").addClass("article-journal col-sm-4").text(article_list[article].article_journal);
+        $article_pubdate = $("<div>").addClass("article-pubdate col-sm-2").text(article_list[article].article_pubdate);
+        $article_citations = $("<div>").addClass("article-citations col-sm").text(article_list[article].article_citations);
+
+        $(".article-list").append($article);
+        $(".article").last().append($("<div>").addClass("row"));
+        $(".row").last().append($article_title);
+        $(".article").last().append($("<div>").addClass("row"));
+        $(".row").last().append($article_id);
+        $(".row").last().append($article_author);
+        $(".row").last().append($article_author);
+        $(".row").last().append($article_pubdate);
+        $(".row").last().append($article_citations);
+      }
+
+      $(".article").slideDown(1000);
+    }
+
+    $('.search-form').keypress(function(event) {
+      if (event.keyCode == 13 || event.which == 13) {
+        SearchPubmed();
+      }
+    });
+  </script>

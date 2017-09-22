@@ -32,9 +32,21 @@ body {
 
 .search-form {
   position: fixed;
-  top: 20%;
-  width: 40%;
-  margin: auto;
+  top: 25%;
+  left: 50%;
+  width: 30%;
+  transform: translate(-50%,-50%);
+}
+
+#query {
+  border-radius: 0;
+}
+
+#search-btn {
+  color: white;
+  background-color: #20a588;
+  border-color: #1d957a;
+  border-radius: 0;
 }
 
 .article-list {
@@ -42,10 +54,29 @@ body {
   top: 30%;
   left: 50%;
   transform: translateX(-50%);
-  height: 70%;
+  height: 65%;
   width: 60%;
   background-color: #DCDCDC;
-  overflow: scroll;
+  overflow-y: scroll;
+}
+
+.article {
+  position: relative;
+  height: 15%;
+  width: auto;
+  margin-bottom: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #F5FFFA;
+  border-radius: 5px;
+  border: 2px solid #00CC99;
+
+  display: flex;
+  align-items: center;
+}
+
+.article:hover {
+  background-color: #DCDCDC;
 }
 
 p {
