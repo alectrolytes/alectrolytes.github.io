@@ -57,6 +57,7 @@ title: Team Nexus - PubMed Popularity Search
 
   <script>
     var search_terms;
+    var article_string;
     var article_list;
     var article_id;
     var search_results;
@@ -95,38 +96,47 @@ title: Team Nexus - PubMed Popularity Search
       }
 
       search_terms = encodeURIComponent(document.getElementById('query').value);
+      article_string = "";
       article_list = [];
-      search_results = PubMedSearch(search_terms);
-      id_list = search_results.esearchresult.idlist;
       append_html = "";
 
+      search_results = PubMedSearch(search_terms);
+      id_list = search_results.esearchresult.idlist;
+
       for (id in id_list) {
-        article_id = id_list[id]
-        article_results = ArticleSearch(article_id);
-        citation_count = article_results.result[article_id].pmcrefcount;
+        article_string += id_list[id] + "+";
+      }
+
+      article_results = ArticleSearch(article_string);
+
+      console.log(article_results);
+
+      for (id in id_list) {
+        citation_count = article_results.result[id_list[id]].pmcrefcount;
+        console.log(citation_count);
         if (citation_count != ''){
           article_list.push({
-            article_id: article_id,
+            article_id: id_list[id],
             article_citations: citation_count,
-            article_title: article_results.result[article_id].title,
-            article_author: article_results.result[article_id].sortfirstauthor,
-            article_journal: article_results.result[article_id].fulljournalname,
-            article_pubdate: article_results.result[article_id].pubdate
+            article_title: article_results.result[id_list[id]].title,
+            article_author: article_results.result[id_list[id]].sortfirstauthor,
+            article_journal: article_results.result[id_list[id]].fulljournalname,
+            article_pubdate: article_results.result[id_list[id]].pubdate
           });
         }
       }
+
       article_list.sort(compare);
       article_list.length = 10;
 
       for (article in article_list) {
-        console.log(article_results.result[article_id].title.length);
         append_html += '<a class="article-link" href="https://www.ncbi.nlm.nih.gov/pubmed/' + article_list[article].article_id + '">'
         append_html += '<div class="article container-fluid" style="display: none">';
         append_html += '<div class="row">';
         append_html += '<div class="article-title" style="font-weight: bold; padding: 1%">' + article_list[article].article_title + '</div></div>';
         append_html += '<div class="row">';
-        if (article_results.result[article_id].title.length > 180) {
-          article_results.result[article_id].title.length = 180;
+        if (article_list[article].article_title.length > 180) {
+          article_list[article].article_title.length = 180;
           append_html += '<div class="article-id col-sm-2">' + article_list[article].article_id + '...</div>';
         } else {
           append_html += '<div class="article-id col-sm-2">' + article_list[article].article_id + '</div>';
