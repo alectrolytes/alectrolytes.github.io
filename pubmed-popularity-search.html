@@ -90,14 +90,15 @@ title: Team Nexus - PubMed Popularity Search
     }
 
     function SearchPubmed() {
-      if($('.article').length) {
-        $(".article").animate({height: 0, opacity: 0}, '600', function(){$(".article").remove()});
+      if($('.article-link').length) {
+        $(".article-link").show("drop", {direction:"up"},600, function(){$(this).remove()});
       }
 
       search_terms = encodeURIComponent(document.getElementById('query').value);
       article_list = [];
       search_results = PubMedSearch(search_terms);
       id_list = search_results.esearchresult.idlist;
+      append_html = "";
 
       for (id in id_list) {
         article_id = id_list[id]
@@ -119,7 +120,7 @@ title: Team Nexus - PubMed Popularity Search
 
       for (article in article_list) {
         console.log(article_results.result[article_id].title.length);
-        append_html += '<a href="https://www.ncbi.nlm.nih.gov/pubmed/' + article_list[article].article_id + '">'
+        append_html += '<a class="article-link" href="https://www.ncbi.nlm.nih.gov/pubmed/' + article_list[article].article_id + '">'
         append_html += '<div class="article container-fluid" style="display: none">';
         append_html += '<div class="row">';
         append_html += '<div class="article-title" style="font-weight: bold; padding: 1%">' + article_list[article].article_title + '</div></div>';
