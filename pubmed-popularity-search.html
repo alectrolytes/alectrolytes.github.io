@@ -62,6 +62,7 @@ title: Team Nexus - PubMed Popularity Search
     var search_results;
     var id_list;
     var article_results
+    var append_html = "";
 
     function Get(yourUrl){
       var Httpreq = new XMLHttpRequest();
@@ -108,7 +109,7 @@ title: Team Nexus - PubMed Popularity Search
             article_citations: citation_count,
             article_title: article_results.result[article_id].title,
             article_author: article_results.result[article_id].sortfirstauthor,
-            aritcle_journal: article_results.result[article_id].fulljournalname,
+            article_journal: article_results.result[article_id].fulljournalname,
             article_pubdate: article_results.result[article_id].pubdate
           });
         }
@@ -117,26 +118,43 @@ title: Team Nexus - PubMed Popularity Search
       article_list.length = 10;
 
       for (article in article_list) {
-        $article = $("<div>").addClass("article container-fluid").css('display', 'none');
-        $article_title = $("<div>").addClass("article-title").text(article_list[article].article_title);
-        $article_id = $("<div>").addClass("article-id col-sm").text(article_list[article].article_id);
-        $article_author = $("<div>").addClass("article-author col-sm-2").text(article_list[article].article_author);
-        $article_journal = $("<div>").addClass("article-journal col-sm-4").text(article_list[article].article_journal);
-        $article_pubdate = $("<div>").addClass("article-pubdate col-sm-2").text(article_list[article].article_pubdate);
-        $article_citations = $("<div>").addClass("article-citations col-sm").text(article_list[article].article_citations);
+        console.log(article_results.result[article_id].title.length);
+        append_html += '<a href="https://www.ncbi.nlm.nih.gov/pubmed/' + article_list[article].article_id + '">'
+        append_html += '<div class="article container-fluid" style="display: none">';
+        append_html += '<div class="row">';
+        append_html += '<div class="article-title" style="font-weight: bold; padding: 1%">' + article_list[article].article_title + '</div></div>';
+        append_html += '<div class="row">';
+        if (article_results.result[article_id].title.length > 180) {
+          article_results.result[article_id].title.length = 180;
+          append_html += '<div class="article-id col-sm-2">' + article_list[article].article_id + '...</div>';
+        } else {
+          append_html += '<div class="article-id col-sm-2">' + article_list[article].article_id + '</div>';
+        }
+        append_html += '<div class="article-author col-sm-2">' + article_list[article].article_author + '</div>';
+        append_html += '<div class="article-journal col-sm-4">' + article_list[article].article_journal + '</div>';
+        append_html += '<div class="article-pubdate col-sm-2">' + article_list[article].article_pubdate + '</div>';
+        append_html += '<div class="article-citations col-sm--2">cited ' + article_list[article].article_citations + ' time(s)</div></div></div></a>';
 
-        $(".article-list").append($article);
-        $(".article").last().append($("<div>").addClass("row"));
-        $(".row").last().append($article_title);
-        $(".article").last().append($("<div>").addClass("row"));
-        $(".row").last().append($article_id);
-        $(".row").last().append($article_author);
-        $(".row").last().append($article_author);
-        $(".row").last().append($article_pubdate);
-        $(".row").last().append($article_citations);
+        // $article = $("<div>").addClass("article container-fluid").css('display', 'none');
+        // $article_title = $("<div>").addClass("article-title").text(article_list[article].article_title);
+        // $article_id = $("<div>").addClass("article-id col-sm").text(article_list[article].article_id);
+        // $article_author = $("<div>").addClass("article-author col-sm-2").text(article_list[article].article_author);
+        // $article_journal = $("<div>").addClass("article-journal col-sm-4").text(article_list[article].article_journal);
+        // $article_pubdate = $("<div>").addClass("article-pubdate col-sm-2").text(article_list[article].article_pubdate);
+        // $article_citations = $("<div>").addClass("article-citations col-sm").text(article_list[article].article_citations);
+        //
+        // $(".article-list").append($article);
+        // $(".article").last().append($("<div>").addClass("row"));
+        // $(".row").last().append($article_title);
+        // $(".article").last().append($("<div>").addClass("row"));
+        // $(".row").last().append($article_id);
+        // $(".row").last().append($article_author);
+        // $(".row").last().append($article_author);
+        // $(".row").last().append($article_pubdate);
+        // $(".row").last().append($article_citations);
       }
-
-      $(".article").slideDown(1000);
+      $(".article-list").append(append_html);
+      $(".article").show("drop", {direction:"up"},600);
     }
 
     $('.search-form').keypress(function(event) {
