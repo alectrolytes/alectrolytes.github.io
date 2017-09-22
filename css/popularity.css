@@ -56,7 +56,6 @@ body {
   transform: translateX(-50%);
   height: 65%;
   width: 60%;
-  background-color: #DCDCDC;
   overflow-y: scroll;
 }
 
