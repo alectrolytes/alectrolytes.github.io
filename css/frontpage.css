@@ -25,13 +25,13 @@ body {
   top: 15%;
   left: 20%;
   color: #20a588;
-  font-family: Hind;
+  font-family: Hind-Medium;
   font-size: 0.8vw;
   z-index: 0;
 }
 
 #page1 .container h1 {
-  font-family: Hind;
+  font-family: Hind-Medium;
   font-size: 4vw;
   text-align: center;
 }
@@ -219,7 +219,7 @@ body {
 
 h1 {
   font-size: 3vw;
-  font-family: Hind;
+  font-family: Hind-Medium;
   color: #20a588;
 }
 
