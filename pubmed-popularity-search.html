@@ -46,18 +46,20 @@ title: Team Nexus - PubMed Popularity Search
   <!-- PubMed Popularity Search -->
   <div class="title">PubMed Popularity Search</div>
   <form class="search-form row" onsubmit="return false;">
-    <!-- <div class="btn-group col-sm-3" data-toggle="buttons">
-      <label class="btn btn-secondary active">
-        <input type="radio" name="options" id="option1" autocomplete="off" checked> 200
-      </label>
-      <label class="btn btn-secondary">
-        <input type="radio" name="options" id="option2" autocomplete="off"> 500
-      </label>
-      <label class="btn btn-secondary">
-        <input type="radio" name="options" id="option3" autocomplete="off"> 1000
-      </label>
-    </div> -->
-    <div class="form-group col-sm-10">
+    <div class="btn-group-wrap col-sm-4">
+      <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-default active">
+          <input type="radio" name="options" id="option1" autocomplete="off" checked> 200
+        </label>
+        <label class="btn btn-default">
+          <input type="radio" name="options" id="option2" autocomplete="off"> 500
+        </label>
+        <label class="btn btn-default">
+          <input type="radio" name="options" id="option3" autocomplete="off"> 1000
+        </label>
+      </div>
+    </div>
+    <div class="form-group col-sm-6">
       <input type="text" id="query" class="form-control" placeholder="Enter search terms">
     </div>
     <div class="col-sm-2">
@@ -176,9 +178,21 @@ title: Team Nexus - PubMed Popularity Search
       $(".article").show("drop", {direction:"up"}, 600);
     }
 
+    $(document).ready(function(){
+      $("#option1").click(function(){
+          $(this).button('toggle');
+      });
+      $("#option2").click(function(){
+          $(this).button('toggle');
+      });
+      $("#option3").click(function(){
+          $(this).button('toggle');
+      });
+    });
     $('.search-form').keypress(function(event) {
       if (event.keyCode == 13 || event.which == 13) {
         SearchPubmed();
       }
     });
+
   </script>

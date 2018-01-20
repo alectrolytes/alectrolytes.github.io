@@ -35,8 +35,12 @@ body {
   position: fixed;
   top: 25%;
   left: 50%;
-  width: 30%;
+  width: 50%;
   transform: translate(-50%,-50%);
+}
+
+.btn-group-wrap {
+  text-align: right;
 }
 
 #query {
@@ -92,4 +96,14 @@ a {
 .js-loading *:before,
 .js-loading *:after {
   animation-play-state: paused !important;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.btn-default.active {
+    color: white;
+    background-color: #20a588;
+    border-color: #1d957a;
 }
