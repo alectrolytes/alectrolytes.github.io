@@ -25,20 +25,20 @@ body {
   top: 15%;
   left: 20%;
   color: #20a588;
-  font-family: Mentone;
+  font-family: Hind;
   font-size: 0.8vw;
   z-index: 0;
 }
 
 #page1 .container h1 {
-  font-family: Mentone;
+  font-family: Hind;
   font-size: 4vw;
   text-align: center;
 }
 
 #page1 .container p {
   font-size: 1.5vw;
-  font-family: Museo300;
+  font-family: OpenSans;
   text-align: center;
 }
 
@@ -219,7 +219,7 @@ body {
 
 h1 {
   font-size: 3vw;
-  font-family: Mentone;
+  font-family: Hind;
   color: #20a588;
 }
 
