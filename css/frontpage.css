@@ -25,20 +25,17 @@ body {
   top: 15%;
   left: 20%;
   color: #20a588;
-  font-family: Hind-Medium;
   font-size: 0.8vw;
   z-index: 0;
 }
 
 #page1 .container h1 {
-  font-family: Hind-Medium;
   font-size: 4vw;
   text-align: center;
 }
 
 #page1 .container p {
   font-size: 1.5vw;
-  font-family: OpenSans;
   text-align: center;
 }
 
@@ -219,7 +216,7 @@ body {
 
 h1 {
   font-size: 3vw;
-  font-family: Hind-Medium;
+  font-family: AvenirNext-Medium;
   color: #20a588;
 }
 
