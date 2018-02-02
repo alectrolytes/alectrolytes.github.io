@@ -3,6 +3,7 @@ body {
   background-position: 50% 25%;
   background-size: cover;
   font-family: Lato;
+  font-size: 2vh;
 }
 
 .overlay {
