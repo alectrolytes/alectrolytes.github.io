@@ -86,7 +86,7 @@ function generateCitation() {
   var search = document.getElementById('query').value;
 
   // determines if input is ISBN or PubMedID
-  if (Number.isInteger(parseInt(search))) { // ISBN citation
+  if (isInteger(parseInt(search))) { // ISBN citation
     var search_length = search.length;
     if (search_length === 10 || search_length === 13) {
       // parse JSON into js object
