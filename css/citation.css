@@ -24,9 +24,8 @@ body {
   height: 70%;
   width: 70%;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  top: 15%;
+  left: 15%;
 }
 
 #nlm-description {
@@ -75,8 +74,7 @@ body {
   width: 80%;
   position: absolute;
   top: 50%;
-  transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
+  left: 10%;
   resize: none;
   overflow: auto;
 }
