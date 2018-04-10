@@ -46,15 +46,14 @@ body {
   position: relative;
 }
 
-.form-group {
-  position: relative;
-  top: 20%;
+.search-form {
+  position: absolute;
   width: 80%;
-  margin: auto;
+  top: 25%;
+  left: 10%;
 }
 
 #query {
-  margin: auto;
   border-radius: 0;
 }
 
@@ -63,17 +62,13 @@ body {
   background-color: #20a588;
   border-color: #1d957a;
   border-radius: 0;
-  position: absolute;
-  top: 35%;
-  transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
 }
 
 #citation {
-  height: 40%;
+  height: 50%;
   width: 80%;
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 10%;
   resize: none;
   overflow: auto;
