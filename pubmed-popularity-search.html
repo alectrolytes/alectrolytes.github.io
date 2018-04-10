@@ -45,9 +45,9 @@ title: Team Nexus - PubMed Popularity Search
 
   <!-- PubMed Popularity Search -->
   <div class="title">PubMed Popularity Search</div>
-  <form class="search-form row" onsubmit="return false;">
-    <div class="btn-group-wrap col-sm-4">
-      <div class="btn-group" data-toggle="buttons">
+  <div class="search-param row">
+    <div class="btn-group-wrap>
+      <div class="btn-group col-md" data-toggle="buttons">
         <label class="btn btn-default active">
           <input type="radio" name="options" id="option1" autocomplete="off" checked> quick
         </label>
@@ -59,10 +59,12 @@ title: Team Nexus - PubMed Popularity Search
         </label>
       </div>
     </div>
-    <div class="form-group col-sm-6">
+  </div>
+  <form class="search-form row" onsubmit="return false;">
+    <div class="form-group col-md-10">
       <input type="text" id="query" class="form-control" placeholder="Enter search terms">
     </div>
-    <div class="col-sm-2">
+    <div class="col-md-2">
       <button type="button" id="search-btn" class="btn" onclick="SearchPubmed()">Search!</button>
     </div>
   </form>
@@ -86,7 +88,8 @@ title: Team Nexus - PubMed Popularity Search
     }
 
     function PubMedSearch(search_terms){
-      var pubmed_search_results = JSON.parse(Get('https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=json&retmax=1000&sort=relevance&term=' + search_terms));
+      console.log('Searching...')
+      var pubmed_search_results = JSON.parse(Get('https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=json&retmax=400&sort=relevance&term=' + search_terms));
       return pubmed_search_results;
     }
 

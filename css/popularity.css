@@ -26,17 +26,27 @@ body {
 .title {
   color: #20a588;
   position: fixed;
+  width:50%;
   top: 15%;
   left: 50%;
   transform: translate(-50%,-50%);
   font-size: 4vw;
 }
 
+.search-param {
+  position: fixed;
+  width: 50%;
+  top: 22.5%;
+  left: 50%;
+  margin: 0 2%;
+  transform: translate(-50%,-50%);
+}
+
 .search-form {
   position: fixed;
-  top: 25%;
-  left: 50%;
   width: 50%;
+  top: 30%;
+  left: 50%;
   transform: translate(-50%,-50%);
 }
 
@@ -57,7 +67,7 @@ body {
 
 .article-list {
   position: fixed;
-  top: 30%;
+  top: 35%;
   left: 50%;
   transform: translateX(-50%);
   height: 65%;
