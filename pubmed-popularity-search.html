@@ -86,7 +86,7 @@ title: Team Nexus - PubMed Popularity Search
     }
 
     function PubMedSearch(search_terms){
-      var pubmed_search_results = JSON.parse(Get('https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=json&retmax=100000&sort=relevance&term=' + search_terms));
+      var pubmed_search_results = JSON.parse(Get('https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=json&retmax=10000&sort=relevance&term=' + search_terms));
       return pubmed_search_results;
     }
 
