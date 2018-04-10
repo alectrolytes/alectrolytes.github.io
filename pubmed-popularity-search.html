@@ -49,13 +49,13 @@ title: Team Nexus - PubMed Popularity Search
     <div class="btn-group-wrap col-sm-4">
       <div class="btn-group" data-toggle="buttons">
         <label class="btn btn-default active">
-          <input type="radio" name="options" id="option1" autocomplete="off" checked> 1000
+          <input type="radio" name="options" id="option1" autocomplete="off" checked> quick
         </label>
         <label class="btn btn-default">
-          <input type="radio" name="options" id="option2" autocomplete="off"> 10000
+          <input type="radio" name="options" id="option2" autocomplete="off"> medium
         </label>
         <label class="btn btn-default">
-          <input type="radio" name="options" id="option3" autocomplete="off"> 100000
+          <input type="radio" name="options" id="option3" autocomplete="off"> deep
         </label>
       </div>
     </div>
@@ -86,7 +86,7 @@ title: Team Nexus - PubMed Popularity Search
     }
 
     function PubMedSearch(search_terms){
-      var pubmed_search_results = JSON.parse(Get('https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=json&retmax=10000&sort=relevance&term=' + search_terms));
+      var pubmed_search_results = JSON.parse(Get('https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=json&retmax=1000&sort=relevance&term=' + search_terms));
       return pubmed_search_results;
     }
 
