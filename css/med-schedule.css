@@ -1,3 +1,7 @@
+body {
+  padding: 0;
+}
+
 h1 {
   text-align: center;
 }
@@ -27,4 +31,8 @@ th, td {
   padding: 5px;
   text-align: center;
   width: 240px;
+}
+
+td {
+  height: 89px;
 }
