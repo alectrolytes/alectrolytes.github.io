@@ -1,0 +1,30 @@
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+th p {
+  font-size: 20px;
+}
+
+td p {
+  font-size: 24px;
+}
+
+.schedule {
+  margin: 0 auto;
+  table-layout: fixed;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 5px;
+  text-align: center;
+  width: 240px;
+}
