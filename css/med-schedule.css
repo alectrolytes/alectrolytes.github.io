@@ -1,6 +1,5 @@
 @media print {
   #Header, #Footer { display: none !important; }
-  @page { margin: 0; }
 }
 
 body {
