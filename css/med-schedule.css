@@ -1,4 +1,5 @@
 @media print {
+  #Header, #Footer { display: none !important; }
   body: { margin: 13mm 6mm 13mm 6mm }
 }
 
