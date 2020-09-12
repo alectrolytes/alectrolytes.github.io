@@ -1,0 +1,101 @@
+body {
+  background: url(/img/Marina.png) no-repeat fixed;
+  background-position: 0% 40%;
+  background-size: cover;
+  font-family: Lato;
+  font-size: 2vh;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(240,240,240,.95);
+  overflow: auto;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  z-index: -100;
+}
+
+.social {
+   top: 11%;
+   left: 2%;
+   position: fixed;
+}
+
+.title {
+  color: #20a588;
+  position: fixed;
+  width: 50%;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 4vw;
+  text-align: center;
+}
+
+.ehp-calc {
+  position: fixed;
+  width: 80%;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.input-label { 
+  font-size: 300%;
+}
+
+.form-control {
+  height: 8vh;
+  font-size: 200%;
+}
+
+.btn-group-wrap {
+  text-align: right;
+}
+
+#calculate-btn {
+  position: fixed;
+  color: white;
+  background-color: #20a588;
+  border-color: #1d957a;
+  border-radius: 0;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 10%;
+  width: 15%;
+  font-size: 200%;
+  text-align: center;
+}
+
+p {
+  font-size: 1.4vw;
+  color: black;
+}
+
+li {
+  font-size: 1.2vw;
+  color: black;
+}
+
+a {
+  color: #20a588;
+}
+
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  animation-play-state: paused !important;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.btn-default.active {
+    color: white;
+    background-color: #20a588;
+    border-color: #1d957a;
+}
