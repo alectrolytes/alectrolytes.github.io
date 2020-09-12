@@ -78,6 +78,8 @@ title: Team Nexus - Effective HP Calculator
       var hp = document.getElementById('hp-input').value;
       var def = document.getElementById('def-input').value;
       var ehp = hp * (1 + def/100);
+      ehp = Math.round(ehp);
+      ehp = ehp.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
 
       document.getElementById('ehp-output').value = ehp;
     }
